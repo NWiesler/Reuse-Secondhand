@@ -1,6 +1,15 @@
 Highcharts.chart('container', {
-    chart: {        
+    chart: {    
+        styledMode: true,       
         inverted: true
+    },
+    credits: {
+        enabled: false
+    },
+    navigation: {
+        buttonOptions: {
+            enabled: false
+        }
     },
     title: {
         text: 'Meinung'
@@ -49,6 +58,12 @@ Highcharts.chart('container', {
         },
   
     },
+    tooltip: {
+        formatter: function() {
+            return this.y + ' %';
+        }
+    },
+
     plotOptions: {
         series:{
             allowPointSelect: true
@@ -64,6 +79,7 @@ Highcharts.chart('container', {
         name: 'Über 30',
         data: [72 , 65, 62, 61, 54, 48, 47, 40, 21]
     }]
+    
 });
 
 //Second Chart
@@ -72,6 +88,14 @@ Highcharts.chart('container2', {
     chart: { 
         styledMode: true,       
         inverted: true
+    },
+    credits: {
+        enabled: false
+    },
+    navigation: {
+        buttonOptions: {
+            enabled: false
+        }
     },
     title: {
         text: 'Verhalten'
@@ -127,6 +151,11 @@ Highcharts.chart('container2', {
             fillOpacity: 0.5
         },
     
+    },
+    tooltip: {
+        formatter: function() {
+            return this.y + ' %';
+        }
     },
     series: [{
         name: 'Unter 30',

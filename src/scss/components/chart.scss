@@ -10,17 +10,27 @@
 }
 .highcharts-color-0 {
     fill: #ffffff;
-    stroke: #5F8B96;
+    stroke: $color-aqua-700;
     stroke-width: 3px;
 }
 .highcharts-color-1 {
 
     fill: #ffffff;
-    stroke: #265870;
+    stroke: $color-blue-800;
     stroke-width: 3px;
 
 }
+.highcharts-title {
+    fill: black;
+    font-family: 'Merriweather', serif;
+    line-height: 1.2;
+    font-size: 2.25rem;
+    font-weight: bold;
 
+  }
+  .highcharts-point-select{
+      fill: blueviolet;
+  }
 
 /*
 .highcharts-figure, .highcharts-data-table table {
