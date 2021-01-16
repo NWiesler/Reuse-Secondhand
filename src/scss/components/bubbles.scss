@@ -26,6 +26,14 @@
     flex-direction: row;
     justify-content: space-around;
 }
+/*Small-Bubble*/
+.small-bubble{
+    width: 4em;
+    height: 4em;
+    background-color: radial-gradient(50% 50% at 50% 50%, rgba(236, 197, 167, 0.47) 0%, #ECC5A7 100%);
+    border-radius: 50%;
+    border: 1px solid red;
+}
 /*HOVER*/ 
 .bubble:hover {
 animation: wave 5s linear infinite;
@@ -48,4 +56,11 @@ animation: klick 5s linear infinite;
 60% {
     border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
 }
+}
+/*FUNKION*/
+.bubble-active{
+    display: inline;
+}
+.bubble-disabled{
+    display: none;
 }
