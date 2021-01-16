@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+/*überarbeiten*/
+div{
+    font-family: 'Jost', sans-serif;
+    color: $color-grey-900;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Merriweather', serif;
+    line-height: 1.2;
+    font-weight: bold;
+}
+h1{
+    font-size: 6rem;
+    text-align: center;
+    margin: $xxl-spacing auto 0 auto;
+}
+h2{
+    font-size: 2.25rem;
+    margin:$xxs-spacing 0 $s-spacing 0;
+}
+h3{
+    font-size: 1.75rem; //32px
+}
+/*
+h4{
+    font-size: 1.5rem; //24px
+}
+h5{
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+*/
+p{
+    font-size: 1.125em;
+    line-height: 1.5;
+    margin: 0;
+}
+.p-large{
+    font-size: 1.375em;
+    margin: 0 auto;
+}
+.p-small{
+    font-size: 0.875em;
+}
+.hero-subline{
+    font-size: 2.25em;
+    text-align: center;
+    margin: 0 auto $xxs-spacing auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-bubbles{
+    color: $color-beige-900;
+}
+.topline{
+    font-size: 1em;
+}
+.topline-green{
+    color: $color-green-900;
+}
+.topline-white{
+    color: white;
+}
+.link{
+    color: $color-forest-500;
+    text-decoration: underline;
+}
+.bubble-text {
+    text-decoration: none;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+    
+    color: $color-grey-900;
+}
+#bubble-text-lowercase {
+    text-transform: lowercase !important;
+}

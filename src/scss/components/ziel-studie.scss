@@ -1,0 +1,43 @@
+.container-ziel-studie {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  //  background: url(../assets/background-green.png);
+    margin-bottom:10em;
+    margin-top:10em;
+}
+//*
+//.background-red{
+//    width: 100%;
+//    background-position: absolute;
+//    background-image: url(../assets/background-red.png);
+//}
+
+.container-text {
+    max-width: 30.563em;
+    margin-left: 20%;
+}
+
+.container-rubbish {
+    position: relative;
+    width: 42em;
+    height: auto;
+
+    img:first-child {
+        position: absolute;
+        left: 5em;
+        z-index: 1;
+    }
+
+    img:last-child {
+        position: absolute;
+        top:-8.125em;
+        right: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+
+
+}
