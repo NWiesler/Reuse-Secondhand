@@ -1,0 +1,36 @@
+.container-chart-selection{
+    border: 3px solid red ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.btn-chart-selection{
+    color: $color-white;
+    border-radius: 0.4em;
+    border: none;
+}
+.active{
+    font-size: 1.125em;
+    background-image: $color-gradient-blue;
+    width: 9.5em;
+    height: 9.5em;
+    margin: 0 1em;
+    img{
+        width: auto;  
+        height: 4.5em;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
+.disabled{
+    font-size: 0.875em;
+    background-color: $color-grey-900;
+    width: 8em;
+    height: 8em;
+    img{
+        width: auto;  
+        height: 4em;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+}
