@@ -1,98 +1,107 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reuse und Secondhand</title>
-    <link rel="stylesheet" type="text/css" href="dist/main.css">
-  </head>
-  <body>
-    <div> 
-      <svg style="display:none;">
-        <symbol id="icon-nav-circle" xmlns="http://www.w3.org/2000/svg"><width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="#CFD59F"/>
-        </symbol>
-        <symbol id="icon-nav-circle" xmlns="http://www.w3.org/2000/svg"><width="7" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1L1 5l4.5 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </symbol>
-      </svg>
-      <nav class="navigation sticky" role="navigation">
-        <ul class="container-nav-links" role="menubar">
-          <li role="menuitem">
-            <img src="src/assets/icon-goal.svg" alt="Icon zurück zum Anfang">
-            <a class="p-large" href="#">
-            Zum Anfang</a>              
-          </li>
-          <hr>
-          <li role="menuitem">
-            <img src="src/assets/icon-goal.svg" alt="Icon Ziel der Studie">
-            <a class="p-large" href="#">
-            Ziel der Studie</a>              
-          </li>
-          <li role="menuitem">
-            <img src="src/assets/icon-herausgeber.svg" alt="Icon Ziel der Studie">
-            <a class="p-large" href="h#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reuse und Secondhand</title>
+  <link rel="stylesheet" type="text/css" href="dist/main.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="/src/js/datasheet.js"></script>
+</head>
+
+<body>
+  <div>
+    <svg style="display:none;">
+      <symbol id="icon-nav-circle" xmlns="http://www.w3.org/2000/svg">
+        <width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="10" r="10" fill="#CFD59F" />
+      </symbol>
+      <symbol id="icon-nav-circle" xmlns="http://www.w3.org/2000/svg">
+        <width="7" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 1L1 5l4.5 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+    </svg>
+    <nav class="navigation sticky" role="navigation">
+      <ul class="container-nav-links" role="menubar">
+        <li role="menuitem">
+          <img src="src/assets/icon-goal.svg" alt="Icon zurück zum Anfang">
+          <a class="p-large" href="#">
+            Zum Anfang</a>
+        </li>
+        <hr>
+        <li role="menuitem">
+          <img src="src/assets/icon-goal.svg" alt="Icon Ziel der Studie">
+          <a class="p-large" href="#">
+            Ziel der Studie</a>
+        </li>
+        <li role="menuitem">
+          <img src="src/assets/icon-herausgeber.svg" alt="Icon Ziel der Studie">
+          <a class="p-large" href="h#">
             Herausgeber</a>
-          </li>
-          <li class="current-page" role="menuitem">
-            <img src="src/assets/icon-zielgruppen.svg" alt="Icon Ziel der Studie">
-            <a class="p-large" href="#">
+        </li>
+        <li class="current-page" role="menuitem">
+          <img src="src/assets/icon-zielgruppen.svg" alt="Icon Ziel der Studie">
+          <a class="p-large" href="#">
             Zielgruppen</a>
-          </li>
-          <li role="menuitem">
-            <img src="src/assets/icon-daten.svg" alt="Icon Ziel der Studie">
-            <a class="p-large" href="https#">
+        </li>
+        <li role="menuitem">
+          <img src="src/assets/icon-daten.svg" alt="Icon Ziel der Studie">
+          <a class="p-large" href="https#">
             Daten</a>
-          </li>
-          <li role="menuitem">
-            <img src="src/assets/icon-interpretationen.svg" alt="Icon Ziel der Studie">
-            <a class="p-large" href="#">
+        </li>
+        <li role="menuitem">
+          <img src="src/assets/icon-interpretationen.svg" alt="Icon Ziel der Studie">
+          <a class="p-large" href="#">
             Interpretationen</a>
-          </li>
-          <hr>
-          <li role="menuitem">
-            <img src="src/assets/icon-impressum.svg" alt="Icon Ziel der Studie">
-            <a class="p-large" href="http#">
+        </li>
+        <hr>
+        <li role="menuitem">
+          <img src="src/assets/icon-impressum.svg" alt="Icon Ziel der Studie">
+          <a class="p-large" href="http#">
             Impressum</a>
-          </li>
-        </ul>
-      </nav>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <h1>ReUse und Secondhand</h1>
+    <div class="container-herotext">
+      <p class="hero-subline">in Deutschland</p>
+      <p class="p-large text-center">Einstellungen zum Thema Abfallvermeidung und Nachhaltigkeit</p>
+      <p class="text-center">Semesterarbeit im Kurs Interaktives Informationsdesign des Fachbereichs Onlinemedien 2021
+        von Nathalie Wiesler, Ronja Walter, Lena Götzinger, Lena Frerichs und Julia Fischinger </p>
     </div>
-    <div>
-      <h1>ReUse und Secondhand</h1>
-      <div class="container-herotext">
-        <p class="hero-subline">in Deutschland</p>
-        <p class="p-large text-center">Einstellungen zum Thema Abfallvermeidung und Nachhaltigkeit</p>
-        <p class="text-center">Semesterarbeit im Kurs Interaktives Informationsdesign des Fachbereichs Onlinemedien 2021
-          von Nathalie Wiesler, Ronja Walter, Lena Götzinger, Lena Frerichs und Julia Fischinger </p>
-      </div>
-      <div class="container-speechbubbles">
-        <img src="src/assets/speechbubble-1.svg" alt="Menge von Leuten">
-        <img src="src/assets/speechbubble-2.svg" alt="Menge von Leuten">
-        <img src="src/assets/speechbubble-3.svg" alt="Menge von Leuten">
-      </div>
-      <div class="row-full">
-        <img src="src/assets/people.svg" alt="Menge von Leuten">
-      </div>
-      <div class="jacket">
-          <img src="src/assets/jacket.svg" alt="Jacke">
-      </div>
-      <div class="cap">
-        <img src="src/assets/cap.svg" alt="Hut">
-      </div>
-      <div class="shirt">
-        <img src="src/assets/shirt.svg" alt="Shirt">
-      </div>
-      <div class="shoe">
-        <img src="src/assets/shoe.svg" alt="Schuh">
-      </div>
+    <div class="container-speechbubbles">
+      <img src="src/assets/speechbubble-1.svg" alt="Menge von Leuten">
+      <img src="src/assets/speechbubble-2.svg" alt="Menge von Leuten">
+      <img src="src/assets/speechbubble-3.svg" alt="Menge von Leuten">
     </div>
-    
-<div class="background-red">
+    <div class="row-full">
+      <img src="src/assets/people.svg" alt="Menge von Leuten">
+    </div>
+    <div class="jacket">
+      <img src="src/assets/jacket.svg" alt="Jacke">
+    </div>
+    <div class="cap">
+      <img src="src/assets/cap.svg" alt="Hut">
+    </div>
+    <div class="shirt">
+      <img src="src/assets/shirt.svg" alt="Shirt">
+    </div>
+    <div class="shoe">
+      <img src="src/assets/shoe.svg" alt="Schuh">
+    </div>
+  </div>
+
+  <div class="background-red">
     <div class="container-ziel-studie">
       <div class="container-text">
         <p class="topline topline-green">Wie stehen Deutsche zu Klimaschutz und Nachhaltigkeit?</p>
         <h2>Ziel der Studie</h2>
         <p>Die zugrunde liegende Studie versucht, die Beweggründe für den Umgang mit Secondhand-Produkten zu verstehen,
-          indem sie die allgemeine Einstellung zu den Themen Klimaschutz und Nachhaltigkeit abfragt und diese in Beziehung zu dem angebenen Verhalten der Befragten setzt.
+          indem sie die allgemeine Einstellung zu den Themen Klimaschutz und Nachhaltigkeit abfragt und diese in
+          Beziehung zu dem angebenen Verhalten der Befragten setzt.
         </p>
       </div>
       <div class="container-rubbish">
@@ -119,7 +128,8 @@
           </div>
           <div class="col">
             <p class="p-large">Methodik und Teilnehmer</p>
-            <p>Die Daten der Studie wurden mittels einer Online-Befragung erhoben. Die Teilnehmer konnten den Aussagen entweder voll und ganz zustimmen oder eher zustimmen.</p>
+            <p>Die Daten der Studie wurden mittels einer Online-Befragung erhoben. Die Teilnehmer konnten den Aussagen
+              entweder voll und ganz zustimmen oder eher zustimmen.</p>
             <p>An der Studie nahmen insgesamt 1.023 Personen aus Deutschland teil, sodass die Stichprobe in Hinblick auf
               Alter, Geschlecht, Region und Konsumverhalten hinreichend unterscheiden werden kann.
             </p>
@@ -134,72 +144,83 @@
 
     <p class="text-center p-large">Der Grad der Zustimmung dieser Aussagen wird in der folgenden Datenansicht in drei
       Kategorien betrachtet.</p>
-      <br>
+    <br>
   </div>
-    <div class="zielgruppe">
-      <div class="card">
-        <img src="src/assets/zielgruppe.svg" alt="Zielgruppe">
-        <div class="cardtext">
-          <h3>Zielgruppen</h3>
-          <p>In einem Vergleich werden die unter 30 und über 30-jährigen Teilnehmer der Studie unterschieden.</p>
-          <p class="link">mehr erfahren</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="src/assets/karte.svg" alt="Karte">
-        <div class="cardtext">
-          <h3>Lokalisation</h3>
-          <p>Die Personen werden aufgrund ihres Wohnorts zusammengefasst, indem Personen aus dem Westen und Osten
-            Deutschlands
-            jeweils eine Gruppe bilden.</p>
-          <p class="link">mehr erfahren</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="src/assets/konsum.svg" alt="Konsumart">
-        <div class="cardtext">
-          <h3>Konsumart</h3>
-          <p>Die Teilnehmer der Studie sind gruppiert, je nachdem, ob sie Käufer:innen von gebrauchten Waren sind oder
-            nicht.
-            Hier wird also hinsichtlich ihres Konsumverhaltens unterscheiden. </p>
-          <p class="link">mehr erfahren</p>
-        </div>
+  <div class="zielgruppe">
+    <div class="card">
+      <img src="src/assets/zielgruppe.svg" alt="Zielgruppe">
+      <div class="cardtext">
+        <h3>Zielgruppen</h3>
+        <p>In einem Vergleich werden die unter 30 und über 30-jährigen Teilnehmer der Studie unterschieden.</p>
+        <p class="link">mehr erfahren</p>
       </div>
     </div>
-    <p>zu den Daten</p>
+    <div class="card">
+      <img src="src/assets/karte.svg" alt="Karte">
+      <div class="cardtext">
+        <h3>Lokalisation</h3>
+        <p>Die Personen werden aufgrund ihres Wohnorts zusammengefasst, indem Personen aus dem Westen und Osten
+          Deutschlands
+          jeweils eine Gruppe bilden.</p>
+        <p class="link">mehr erfahren</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="src/assets/konsum.svg" alt="Konsumart">
+      <div class="cardtext">
+        <h3>Konsumart</h3>
+        <p>Die Teilnehmer der Studie sind gruppiert, je nachdem, ob sie Käufer:innen von gebrauchten Waren sind oder
+          nicht.
+          Hier wird also hinsichtlich ihres Konsumverhaltens unterscheiden. </p>
+        <p class="link">mehr erfahren</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Chart-->
+  <figure class="highcharts-figure">
+    <div id="container" style="width: 550px; height: 800px; margin: 0 auto"></div>
+  </figure>
+
+  <!--Chart Ende-->
+
+
+  <p>zu den Daten</p>
   </div>
   <div id="bubbles">
     <div class="bubble-row-1">
-        <div class="bubble">
-          <div class="bubble-text-wrapper">
-            <a href="#" class="bubble-text">Zusatzinfos</a>
-          </div>
+      <div class="bubble">
+        <div class="bubble-text-wrapper">
+          <a href="#" class="bubble-text">Zusatzinfos</a>
         </div>
+      </div>
     </div>
     <!-- Kreise in Reihe 2  -->
     <div class="bubble-row-2">
-        <button class="bubble" v-on:click="isHidden = !isHidden">
-          <div class="bubble-text-wrapper">
-            <a href="#" class="bubble-text"><span id="bubble-text-lowercase">Intressante</span> Gemeinsamkeiten</a>
-          </div>
-        </button>
-        <button class="bubble" v-on:click="isHidden = !isHidden">
-          <div class="bubble-text-wrapper">
-            <a href="#" class="bubble-text">Schlussfolgerungen</a>
-          </div>
-        </button>
+      <button class="bubble" v-on:click="isHidden = !isHidden">
+        <div class="bubble-text-wrapper">
+          <a href="#" class="bubble-text"><span id="bubble-text-lowercase">Intressante</span> Gemeinsamkeiten</a>
+        </div>
+      </button>
+      <button class="bubble" v-on:click="isHidden = !isHidden">
+        <div class="bubble-text-wrapper">
+          <a href="#" class="bubble-text">Schlussfolgerungen</a>
+        </div>
+      </button>
     </div>
-    
+
 
     <!-- Gemeinsamkeiten  -->
     <button class="small-bubble" v-on:click="isHidden = !isHidden">
       <div class="small-bubble-text-wrapper">
         <p class="small-bubble-tag">Meinung</p>
         <p class="small-bubble-percent">60%</p>
-        <p class="small-bubble-description">der Befragten geht davon aus, dass nachhaltiges Handeln in Zukunft wichtiger wird</p>
+        <p class="small-bubble-description">der Befragten geht davon aus, dass nachhaltiges Handeln in Zukunft wichtiger
+          wird</p>
       </div>
     </button>
   </div>
-  </body>
+</body>
+<script src="/src/js/datasheet.js"></script>
 </html>
