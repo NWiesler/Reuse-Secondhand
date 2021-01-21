@@ -1,6 +1,10 @@
 
 @import 'https://code.highcharts.com/css/highcharts.css';
 
+.container-charts{
+    display: flex;
+    justify-content: center;
+}
 .highcharts-container {
 
     font-family: "Jost", sans-serif;
@@ -12,9 +16,6 @@
 .highcharts-plot-background {
     fill: $color-blue-100;
 }
-
-
-
 .highcharts-color-0 {
     fill: #ffffff;
     stroke: $color-aqua-700;

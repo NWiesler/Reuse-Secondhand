@@ -183,25 +183,35 @@
   <img src="src/assets/button-arrow-down.svg" alt="Konsumart">
   <p>zu den Daten</p>
 </div>
-<div class="container-chart-selection">
-  <button id="btn-lokalisation" onclick="showLokalisation()" class="btn-chart-selection disabled">
-    <img src="src/assets/charts/icon-selection-lokalisation-disabled.svg" alt="Konsumart">
-    Lokalisation
-  </button>  
-  <button id="btn-alter" onclick="showAlter()" class="btn-chart-selection active">
-    <img src="src/assets/charts/icon-selection-alter-active.png" alt="Konsumart">
-    Alter
-  </button>
-  <button id="btn-konsumart"onclick="showKonsumart()" class="btn-chart-selection disabled">
-    <img src="src/assets/charts/icon-selection-konsumentenart-disabled.svg" alt="Konsumart">
-    Konsumart
-  </button>
+<div class="container-chart-header">
+  <div id="text-meinung">
+    <h3>Meinung</h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+  </div>
+  <div class="container-chart-selection">
+    <button id="btn-lokalisation" onclick="showLokalisation()" class="btn-chart-selection disabled">
+      <img src="src/assets/charts/icon-selection-lokalisation-disabled.svg" alt="Konsumart">
+      Lokalisation
+    </button>  
+    <button id="btn-alter" onclick="showAlter()" class="btn-chart-selection active">
+      <img src="src/assets/charts/icon-selection-alter-active.png" alt="Konsumart">
+      Alter
+    </button>
+    <button id="btn-konsumart"onclick="showKonsumart()" class="btn-chart-selection disabled">
+      <img src="src/assets/charts/icon-selection-konsumentenart-disabled.svg" alt="Konsumart">
+      Konsumart
+    </button>
+  </div>
+  <div id="text-konsum">
+    <h3>Konsum</h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula </p>
+  </div>
 </div>
   <!--Chart-->
-  <div id="charts">
-    <div id="container" style="width: 750px; height: 880px; float: left;"></div>
+  <div class="container-charts" id="charts">
+    <div id="container" style="width:700px; height:880px; float: left;"></div>
 
-    <div id="container2" style="width: 750px; height: 880px;"></div>
+    <div id="container2" style="width:700px; height:880px;"></div>
   </div>
   <!--Chart Ende-->
 

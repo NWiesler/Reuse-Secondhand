@@ -1,3 +1,21 @@
+.container-chart-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    div{
+        max-width: 22em;
+        h3{
+            margin: 0 0 0.5em 0;
+        }
+    }
+    #text-meinung{
+        margin-left: 8em;
+    }
+    #text-konsum{
+        text-align: right;
+        margin-right: 8em;
+    }    
+}
 .container-chart-selection{
     display: flex;
     align-items: flex-end;
