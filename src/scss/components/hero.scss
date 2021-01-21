@@ -14,29 +14,19 @@
         width: 100%;
     }
 }
-/*.jacket{
+.jacket{
       img{
-        position: fixed;
-        /*top: 0;
-        left: 56.5em;
-
-        width: 12%;
+        width: auto;
+        position: absolute;
+        top: 71.25em;
+        left: 55em;
       }
-}*/
-#jacket{
-    position: absolute;
-    top: 800px;
-    left: 56.5em;
-    transform: rotate(-20deg);
 }
-/*.container-sticky{
-  position: absolute;
-}*/
 .cap{
       img{
         width: auto;
         position: absolute;
-        top: 82em;
+        top: 74.375em;
         left: 78.125em;
       }
 }
@@ -44,17 +34,17 @@
       img{
         width: auto;
         position: absolute;
-        top: 79.5em;
-        left: 21em;
-        transform: rotate(-30deg);
+        top: 72.813em;
+        left: 20em;
+        transform: rotate(-20deg);
       }
 }
 .shoe{
       img{
         width: auto;
         position: absolute;
-        top: 80em;
-        left: 44em;
+        top: 72.813em;
+        left: 43.125em;
         transform: rotate(20deg);
       }
 }
