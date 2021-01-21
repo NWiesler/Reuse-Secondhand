@@ -25,16 +25,19 @@
     color: $color-white;
     border-radius: 0.4em;
     border: none;
+    padding: 0.8em 0 0 0;
+}
+button.btn-chart-selection:nth-child(2){
+    margin: 0 1em;
 }
 .active{
     font-size: 1.125em;
-    background-image: $color-gradient-blue;
     width: 9.5em;
     height: 9.5em;
-    margin: 0 1em;
+    animation: ease-in 10s;
     img{
         width: auto;  
-        height: 4.5em;
+        height: 6.5em;
         object-fit: cover;
         margin: 0 auto;
     }
@@ -46,8 +49,17 @@
     height: 8em;
     img{
         width: auto;  
-        height: 4em;
+        height: 6em;
         object-fit: cover;
         margin: 0 auto;
     }
+}
+.active-lokalisation{
+    background-image: $color-gradient-terracotta;
+}
+.active-alter{
+    background-image: $color-gradient-blue;
+}
+.active-konsumart{
+    background-image: $color-gradient-forest;
 }
