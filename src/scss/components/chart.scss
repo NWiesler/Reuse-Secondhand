@@ -8,11 +8,19 @@
     line-height: 1.5;
     margin: 0;
 }
+
+.highcharts-plot-background {
+    fill: $color-blue-100;
+}
+
+
+
 .highcharts-color-0 {
     fill: #ffffff;
     stroke: $color-aqua-700;
     stroke-width: 3px;
 }
+
 .highcharts-color-1 {
 
     fill: #ffffff;
@@ -28,9 +36,15 @@
     font-weight: bold;
 
   }
-  .highcharts-point-select{
-      fill: blueviolet;
+  .highcharts-axis-labels{
+      background-color: aqua;
   }
+  .highcharts-axis.highcharts-color-0 .highcharts-axis-line {
+	stroke: #7cb5ec;
+}
+.highcharts-axis.highcharts-color-0 categories {
+	fill: #7cb5ec;
+}
 
 /*
 .highcharts-figure, .highcharts-data-table table {
