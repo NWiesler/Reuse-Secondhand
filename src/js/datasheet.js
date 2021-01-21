@@ -45,6 +45,7 @@ Highcharts.chart('container', {
             'Nachhaltig zu konsumieren bedeutet für mich gebrauchte Produkte zu kaufen.',
             'Gebrauchte Produkte sind etwas für Leute, die sich neue Ware nicht leisten können.'
         ],
+        crosshair: true,   
         
     },
     yAxis: {
@@ -69,14 +70,7 @@ Highcharts.chart('container', {
         }
     },
 
-    plotOptions: {
-        series:{
-            allowPointSelect: true
-        },
-        area: {
-            fillOpacity: 0.5
-        }
-    },
+   
     series: [{
         name: 'Unter 30',
         data: [69, 43, 72, 53, 48, 44, 44, 45, 21]
@@ -117,11 +111,8 @@ Highcharts.chart('container2', {
         }
     },
     legend: {
-        align: 'right',
-        verticalAlign: 'top',
-
-
-  
+        align: 'center',
+        verticalAlign: 'top', 
     },
     xAxis: {
         opposite: true,
@@ -133,8 +124,8 @@ Highcharts.chart('container2', {
             'Ich finde die globale Schüler- und Studenten-Initiative "Fridays for Future" unterstützenswert.',
             'Ich sehe nicht ein, für Umwelt und Klima Abstriche bei meinem Konsumverhalten zu machen.',
             'Mir ist wichtig, immer die neusten Trends und Produkte zu besitzen.',
-        ]
-        
+        ],
+        crosshair: true,        
     },
     yAxis: {
         minorTickInterval: 25,
@@ -152,15 +143,7 @@ Highcharts.chart('container2', {
         },
   
     },
-    plotOptions: {
-        series:{
-            allowPointSelect: true
-        },
-        area: {
-            fillOpacity: 0.5
-        },
-    
-    },
+   
     tooltip: {
         formatter: function() {
             return this.y + ' %';
