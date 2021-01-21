@@ -2,6 +2,7 @@ Highcharts.chart('container', {
     chart: {    
         styledMode: true,       
         inverted: true,
+        backgroundColor: 'transparent',
     },
     
 
@@ -14,7 +15,8 @@ Highcharts.chart('container', {
         }
     },
     title: {
-        text: 'Meinung'
+        text: ''
+
     },
     accessibility: {
         keyboardNavigation: {
@@ -31,6 +33,7 @@ Highcharts.chart('container', {
   
     },
     xAxis: {
+        className: 'highcharts-xaxis',
         categories: [
             'Nicht nur beim Konsum, auch im Alltag wird nachhaltiges Handeln wichtiger.',
             'Gebrauchte Produkte sind gut für die Umwelt.',
@@ -104,7 +107,7 @@ Highcharts.chart('container2', {
         }
     },
     title: {
-        text: 'Verhalten'
+        text: ''
     },
     accessibility: {
         keyboardNavigation: {
