@@ -194,16 +194,13 @@
 
   <div class="container-chart-selection">
     <button id="btn-lokalisation" onclick="showLokalisation()" class="btn-chart-selection disabled">
-      <img src="src/assets/charts/icon-selection-lokalisation-disabled.svg" alt="Konsumart">
-      Lokalisation
+      <img id="icon-lokalisation" src="src/assets/charts/unselected-localisation.svg" alt="Konsumart">
     </button>  
-    <button id="btn-alter" onclick="showAlter()" class="btn-chart-selection active">
-      <img src="src/assets/charts/icon-selection-alter-active.png" alt="Konsumart">
-      Alter
+    <button id="btn-alter" onclick="showAlter()" class="btn-chart-selection active active-alter">
+      <img id="icon-alter" src="src/assets/charts/selected-age.png" alt="Konsumart">
     </button>
     <button id="btn-konsumart"onclick="showKonsumart()" class="btn-chart-selection disabled">
-      <img src="src/assets/charts/icon-selection-konsumentenart-disabled.svg" alt="Konsumart">
-      Konsumart
+      <img id="icon-konsumart" src="src/assets/charts/unselected-konsum.svg" alt="Konsumart">
     </button>
   </div>
 
@@ -266,4 +263,6 @@
 <script src="/src/js/datasheet.js"></script>
 <script src="/src/js/chart/chart-selection.js"></script>
 <script src="/src/js/chart/selection-change-data.js"></script>
+<script src="/src/js/chart/selection-change-style.js"></script>
+
 </html>
