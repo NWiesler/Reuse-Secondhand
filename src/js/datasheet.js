@@ -1,4 +1,4 @@
-Highcharts.chart('container', {
+const chart1 = Highcharts.chart('container', {
     chart: {    
         styledMode: true,       
         inverted: true,
@@ -87,9 +87,9 @@ Highcharts.chart('container', {
 
 //Second Chart
 
-Highcharts.chart('container2', {
+const chart2 = Highcharts.chart('container2', {
     chart: { 
-        styledMode: true,       
+         
         inverted: true
     },
     credits: {
@@ -149,6 +149,12 @@ Highcharts.chart('container2', {
             return this.y + ' %';
         }
     },
+    plotOptions: {
+        series: {
+            color: '#FF0000'
+        }
+    },
+
     series: [{
         name: 'Unter 30',
         data: [79, 77, 50, 47, 45, 21, 18]
@@ -156,7 +162,9 @@ Highcharts.chart('container2', {
         name: 'Über 30',
         data: [88 , 83, 46, 44, 38, 14, 10],
         marker: {
-            symbol: 'circle'
+            symbol: 'circle',
+                    
         }
     }]
 });
+
