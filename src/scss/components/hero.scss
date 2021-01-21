@@ -11,22 +11,35 @@
 }
 .row-full{
     img{
+      position: relative;
+      top: -200px;
         width: 100%;
     }
 }
-.jacket{
+/*.jacket{
       img{
-        width: auto;
-        position: absolute;
-        top: 71.25em;
-        left: 55em;
+        position: fixed;
+        /*top: 0;
+        left: 56.5em;
+
+        width: 12%;
       }
+}*/
+#jacket{
+    position: fixed;
+    top:0;
+    left:0;
+  //  left: 56.5em;
+    transform: rotate(-20deg);
 }
+/*.container-sticky{
+  position: absolute;
+}*/
 .cap{
       img{
         width: auto;
         position: absolute;
-        top: 74.375em;
+        top: 82em;
         left: 78.125em;
       }
 }
@@ -34,17 +47,17 @@
       img{
         width: auto;
         position: absolute;
-        top: 72.813em;
-        left: 20em;
-        transform: rotate(-20deg);
+        top: 79.5em;
+        left: 21em;
+        transform: rotate(-30deg);
       }
 }
 .shoe{
       img{
         width: auto;
         position: absolute;
-        top: 72.813em;
-        left: 43.125em;
+        top: 80em;
+        left: 44em;
         transform: rotate(20deg);
       }
 }
