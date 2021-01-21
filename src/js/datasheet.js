@@ -1,8 +1,17 @@
+Highcharts.setOptions({
+    chart: {
+        style: {
+            fontFamily: 'Jost, sans-serif',
+            fontSize: '25px',
+            lineWidth: 5,
+        }
+    }
+});
+
 const chart1 = Highcharts.chart('container', {
     chart: {    
         styledMode: true,       
         inverted: true,
-        backgroundColor: 'transparent',
     },
     
 
@@ -88,9 +97,8 @@ const chart1 = Highcharts.chart('container', {
 //Second Chart
 
 const chart2 = Highcharts.chart('container2', {
-    chart: { 
-         
-        inverted: true
+    chart: {    
+        inverted: true,
     },
     credits: {
         enabled: false
@@ -149,20 +157,30 @@ const chart2 = Highcharts.chart('container2', {
             return this.y + ' %';
         }
     },
-    plotOptions: {
-        series: {
-            color: '#FF0000'
-        }
-    },
+
+
 
     series: [{
         name: 'Unter 30',
-        data: [79, 77, 50, 47, 45, 21, 18]
-    }, {
-        name: 'Über 30',
-        data: [88 , 83, 46, 44, 38, 14, 10],
+        color: '#5F8B96',
+        data: [79, 77, 50, 47, 45, 21, 18],
         marker: {
             symbol: 'circle',
+            fillColor: '#FFFFFF',
+            lineWidth: 3,
+            lineColor: null // inherit from series
+                    
+        }
+    }, {
+        name: 'Über 30',
+        color: '#265870',
+        data: [88 , 83, 46, 44, 38, 14, 10],
+        lineWidth: 5,
+        marker: {
+            symbol: 'circle',
+            fillColor: '#FFFFFF',
+            lineWidth: 3,
+            lineColor: null // inherit from series
                     
         }
     }]

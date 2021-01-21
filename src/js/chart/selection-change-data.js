@@ -17,15 +17,20 @@ document.getElementById('btn-lokalisation').addEventListener('click', () => {
     chart2.series[0].setData([8 , 12, 4, 80, 38, 14, 10]);
     chart2.series[1].setData([8 , 0, 4, 80, 38, 14, 10]);
 
-    chart1.series[0].graph.attr('stroke', 'red')
+    chart2.series[0].graph.attr('stroke', ' #DEB89A');
+    chart2.series[1].graph.attr('stroke', '  #8B4E3E');
 });
 
 document.getElementById('btn-konsumart').addEventListener('click', () => {
     chart1.series[0].setData([8 , 0, 4, 80, 38, 14, 10]);
     chart1.series[1].setData([8 , 0, 4, 80, 38, 14, 10]);
 
-    chart2.series[0].setData([8 , 0, 4, 80, 38, 14, 10]);
-    chart2.series[1].setData([8 , 0, 4, 80, 38, 14, 10]);
+    chart1.series[0].graph.attr('stroke', '#AFB878');
+    chart1.series[1].graph.attr('stroke', ' #4A6E63');
 
-    chart2.series[0].graph.attr('stroke', 'blue')
+    chart2.series[0].setData([8 , 0, 4, 80, 38, 14, 10]);
+    chart2.series[1].setData([8 , 0, 40, 80, 38, 14, 10]);
+
+    chart2.series[0].graph.attr('stroke', '#AFB878');
+    chart2.series[1].graph.attr('stroke', ' #4A6E63');
 });
