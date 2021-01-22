@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,63 +8,7 @@
   <link rel="icon" type="image/png" href="/favicon.svg" sizes="32x32">
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
-  <style>
-    body {
-      font-family: 'Lato', sans-serif;
-    }
-    
-    .overlay {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0, 0.9);
-      overflow-x: hidden;
-      transition: 0.5s;
-    }
-    
-    .overlay-content {
-      position: relative;
-      top: 25%;
-      width: 100%;
-      text-align: center;
-      margin-top: 30px;
-    }
-    
-    .overlay a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 36px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-    
-    .overlay a:hover, .overlay a:focus {
-      color: #f1f1f1;
-    }
-    
-    .overlay .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
-    }
-    
-    @media screen and (max-height: 450px) {
-      .overlay a {font-size: 20px}
-      .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-      }
-    }
-    </style>
 </head>
-
 <body>
   <div>
     <svg style="display:none;">
@@ -122,35 +65,27 @@
             C3.3,0.3,2.9,0.1,2.5,0.1C2,0.1,1.7,0.3,1.4,0.6S0.9,1.2,0.9,1.6z M1.2,4.7V13h2.6V4.7H1.2z"/></svg>
           <!-- <a class="p-large" href="http#">
           Impressum</a> -->
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Impressum</span>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">Impressum</span>
         </li>
       </ul>
     </nav>
   </div>
-
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <h1>Impressums</h1>
+          <p class="p-large text-center">Semesterprojektarbeit im Kurs „Interaktives Informationsdesign und Visual Storytelling“</p>
+            <div class="container-speechbubbles-impressum">
+              <!--img src="src/assets/impressumbubble1.svg" alt="Wer sind wir"-->
+              <img src="src/assets/impressumbubble2.svg" alt="Studie">
+              <!--img src="src/assets/impressumbubble3.svg" alt="DHBW Mosbach"-->
+            </div>
+        <div class="container People">
+            <img src="src/assets/impressumpeople.svg" alt="DHBW Mosbach">
+        </div>
     </div>
   </div>
-
-  <script>
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-    
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-    </script>
-
-
-
-  <div>
+<div>
 <!--Content-->
 <main>
   <section id="nav_Anfang">
@@ -198,8 +133,8 @@
             <img src="src/assets/trash.svg" alt="Mülleimer">
             <img src="src/assets/background-green.png" alt="Hintergrundfläche grün">
           </div>
-        </div>    
-        </div> 
+        </div>
+        </div>
 </section>
 <section id="nav_Herausgeber">
     <div class="container-studie">
@@ -288,7 +223,7 @@
   <div class="container-chart-selection">
     <button id="btn-lokalisation" onclick="showLokalisation()" class="btn-chart-selection disabled">
       <img id="icon-lokalisation" src="src/assets/charts/unselected-localisation.svg" alt="Konsumart">
-    </button>  
+    </button>
     <button id="btn-alter" onclick="showAlter()" class="btn-chart-selection active active-alter">
       <img id="icon-alter" src="src/assets/charts/selected-age.png" alt="Konsumart">
     </button>
@@ -340,7 +275,7 @@
             <a href="#" class="bubble-text">Schlussfolgerungen</a>
           </div>
         </button>
-        
+
     </div>
 
     <!-- Gemeinsamkeiten  -->
@@ -359,5 +294,13 @@
 <script src="/src/js/chart/chart-selection.js"></script>
 <script src="/src/js/chart/selection-change-data.js"></script>
 <script src="/src/js/chart/selection-change-style.js"></script>
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
 
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
 </html>
