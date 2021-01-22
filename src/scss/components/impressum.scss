@@ -2,7 +2,7 @@
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 1;
+	z-index: 999999999999999;
 	top: 0;
 	left: 0;
 	background-color: rgb(255,255,255);
@@ -29,11 +29,12 @@
 		top: 20px;
 		right: 45px;
 		font-size: 60px;
+		color:#000;
 	}
 }
 .overlay-content {
 	position: relative;
-	top: 25%;
+	top: 5%;
 	width: 100%;
 	text-align: center;
 	margin-top: 30px;
