@@ -5,62 +5,184 @@
     content: "";
     border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
     background-image: radial-gradient(
-      50% 50% at 50% 50%, 
+      50% 50% at 50% 50%,
       rgba(236, 197, 167, 0.47) 0%,
       rgba(236, 197, 167, 0.32) 70%,
       #ecc5a7 100%
     );
     margin: auto;
     transition: 0.3s;
-    border: none;
-}
-.bubble-text-wrapper {
+  }
+  
+  .bubble-text-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-}
-.bubble-row-2 {
+  }
+  
+  .bubble-text {
+    text-decoration: none;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+  
+    color: #000000;
+  }
+  
+  #bubble-text-lowercase {
+    text-transform: lowercase !important;
+  }
+  .bubble-row-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-/*Small-Bubble*/
-.small-bubble{
-    width: 4em;
-    height: 4em;
-    background-color: radial-gradient(50% 50% at 50% 50%, rgba(236, 197, 167, 0.47) 0%, #ECC5A7 100%);
-    border-radius: 50%;
-    border: 1px solid red;
-}
-/*HOVER*/ 
-.bubble:hover {
-animation: wave 5s linear infinite;
-}
-
-.bubble:hover .bubble-text {
-font-size: 26px;
-}
-
-.bubble:onclick .bubble-text {
-animation: klick 5s linear infinite;
-}
-
-/*ANIMATIONEN*/
-@keyframes wave {
-20% {
-    border-radius: 45% 55% 62% 38% / 53% 41% 49% 47%;
-}
-
-60% {
-    border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
-}
-}
-/*FUNKION*/
-.bubble-active{
-    display: inline;
-}
-.bubble-disabled{
+  }
+  
+  /* LITTLE BUBBLE */
+  .little-bubble-wrapper-gemeinsamkeiten {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .little-bubble-wrapper-zusatzinfos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  #gemeinsamkeiten {
     display: none;
-}
+  }
+  
+  #zusatzinfos {
+    display: none;
+  }
+  
+  #schlussfolgerungen {
+    display: none;
+  }
+  
+  .little-bubble {
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  .color-g {
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(133.76deg, #5f8b96 15.01%, #265870 87.42%);
+  }
+  
+  .color-z {
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(133.76deg, #c99a8d 15%, #cca094 15.01%, #a3604d 87.42%);
+  }
+  
+  .color-s {
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(133.76deg, #a4b690 15%, #588074 87.42%);
+  }
+  
+  .size-s {
+    width: 250px !important;
+    height: 250px !important;
+    bottom: 100px;
+  }
+  .size-m {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .size-l {
+    width: 400px !important;
+    height: 400px !important;
+  }
+  .little-bubble-wrapper-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .little-bubble p {
+    text-align: center;
+    font-family: jost;
+    margin: 0px;
+  }
+  .percent {
+    font-weight: bold;
+    font-size: 60px;
+    color: #ffffff;
+  }
+  
+  .tag {
+    font-weight: bold;
+    font-size: small;
+    border: 1px solid #ecc5a7;
+    border-radius: 3px;
+    background-color: cornsilk;
+    width: fit-content;
+    align-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  /* Funktionen */
+  .bubble-row-2 .disabled {
+    display: none;
+  }
+  /*HOVER*/
+  
+  .bubble:hover {
+    animation: wave 5s linear infinite;
+  }
+  
+  .bubble:hover .bubble-text {
+    font-size: 26px;
+  }
+  
+  .bubble:onclick .bubble-text {
+    animation: klick 5s linear infinite;
+  }
+  
+  /*ANIMATIONEN*/
+  @keyframes wave {
+    20% {
+      border-radius: 45% 55% 62% 38% / 53% 41% 49% 47%;
+    }
+  
+    60% {
+      border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+    }
+  }
+  
+  /* @keyframes klick {
+    0% {
+    color: #333;
+    font-size: 26px;
+    }
+    100% {
+      color: rgb(203, 20, 188);
+      font-size: 30px;
+    }
+  } */
+  
