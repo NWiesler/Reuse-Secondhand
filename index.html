@@ -13,12 +13,6 @@
 
 <body>
   <div>
-    <svg style="display:none;">
-      <symbol id="icon-nav-circle" xmlns="http://www.w3.org/2000/svg"><width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="#CFD59F"/>
-      </symbol>
-      <symbol id="icon-nav-circle" xmlns="http://www.w3.org/2000/svg"><width="7" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1L1 5l4.5 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </symbol>
-    </svg>
     <nav class="navigation sticky" role="navigation">
       <ul class="container-nav-links" role="menubar">
         <li role="menuitem">
@@ -74,7 +68,7 @@
   <div>
 <!--Content-->
 <main>
-  <section>
+  <section id="nav_anfang">
         <h1>ReUse und Secondhand</h1>
         <div class="container-herotext">
           <p class="hero-subline">in Deutschland</p>
@@ -104,7 +98,7 @@
           <img src="src/assets/shoe.svg" alt="Schuh">
         </div-->
     </div>
-</section>
+  </section>
 <section>
     <div class="background-red">
       <div class="container-ziel-studie" id="nav_ziel-studie">
@@ -119,8 +113,8 @@
             <img src="src/assets/trash.svg" alt="Mülleimer">
             <img src="src/assets/background-green.png" alt="Hintergrundfläche grün">
           </div>
-        </div>    
-        </div> 
+      </div>    
+    </div> 
 </section>
 <section>
     <div class="container-studie">
@@ -213,7 +207,7 @@
     <button id="btn-alter" onclick="showAlter()" class="btn-chart-selection active active-alter">
       <img id="icon-alter" src="src/assets/charts/selected-age.png" alt="Konsumart">
     </button>
-    <button id="btn-konsumart"onclick="showKonsumart()" class="btn-chart-selection disabled">
+    <button id="btn-konsumart" onclick="showKonsumart()" class="btn-chart-selection disabled">
       <img id="icon-konsumart" src="src/assets/charts/unselected-konsum.svg" alt="Konsumart">
     </button>
   </div>
@@ -285,7 +279,7 @@
       <div class="little-bubble color-g size-m">
         <div class="little-bubble-wrapper-text">
           <p class="percent">60%</p>
-          <p>der Befragten werden zu nachhaltigem Verhalten motiviert, wenn es Personen im engeren Umfeld auch tun</p>
+          <p> gehen davon aus, dass nachhaltiges Handeln in Zukunft wichtiger wird</p>
         </div>
       </div>
       <div class="little-bubble color-g size-l">
@@ -296,15 +290,20 @@
       <div class="little-bubble color-g size-m">
         <div class="little-bubble-wrapper-text">
           <p class="percent">45%</p>
-          <p> !!ACHTUNG DOPPELTER TEXT!! der Befragten werden zu nachhaltigem Verhalten motiviert, wenn es Personen im engeren Umfeld auch tun</p>
+          <p>werden zu nachhaltigem Verhalten motiviert, wenn es Personen im engeren Umfeld auch tun</p>
         </div>
       </div>
       <div class="little-bubble color-g size-s">
         <div class="little-bubble-wrapper-text">
-          <p>Fast jeder Zweite kann sich vorstellen, in Zukunft mehr gebraucht zu kaufen, um die Umwelt zu schonen</p>
+          <p>Die Akzeptanz Produkte wiederzuverwenden ist hoch, auch wenn Unterschiede gab</p>
         </div>
       </div>
-      <div class="little-bubble color-g size-s">
+      <div class="little-bubble color-g size-m">
+        <div class="little-bubble-wrapper-text">
+          <p>Die meisten Befragten kaufen gebrauchte Produkte, da sie günstiger sind. Wichtig ist für sie aber auch der Klima- und Ressourcenschutz</p>
+        </div>
+      </div>
+      <div class="little-bubble color-g size-m">
         <div class="little-bubble-wrapper-text">
           <p class="percent">64%</p>
           <p>denken, dass gebrauchte Produkte gut für die Umwelt sind</p>
@@ -312,7 +311,8 @@
       </div>
       <div class="little-bubble color-g size-m">
         <div class="little-bubble-wrapper-text">
-          <p>Die meisten Befragten kaufen gebrauchte Produkte, da sie günstiger sind. Genauso wichtig ist für sie aber auch der Klima- und Ressourcenschutz</p>
+          <p class="percent">XX%</p>
+          <p>Fast jeder Zweite kann sich vorstellen, in Zukunft mehr gebraucht zu kaufen, um die Umwelt zu schonen</p>
         </div>
       </div>
       <div class="little-bubble color-g size-m">
@@ -321,62 +321,85 @@
           <p>Fast ein Drittel hat das eigene Verhalten geändert, seit Umweltschutz verstärkt in den Medien vertreten ist.</p>
         </div>
       </div>
-      <div class="little-bubble color-g size-s">
-        <div class="little-bubble-wrapper-text">
-          <p>Die Akzeptanz Produkte wiederzuverwenden ist hoch, auch wenn Unterschiede gab</p>
-        </div>
-      </div>
     </div>
     <div class="little-bubble-wrapper-zusatzinfos" id="zusatzinfos">      
       <div class="little-bubble color-z size-s">
         <div class="little-bubble-wrapper-text">
-          <p>Je älter die Befragten, desto höher ist die Bereitschaft Ressourcen zu schonen</p>
-        </div>
-      </div>
-      <div class="little-bubble color-z size-m">
-        <div class="little-bubble color-z size-l">
-          <div class="little-bubble-wrapper-text">
-            <p>Trotz der hohen Zustimmung für ReUse verringert sich das Abfallaufkommen nicht. Die meisten Produkte im Haushalt werden entsorgt und gegen ein Neues eingetauscht.</p>
-          </div>
-        </div>
-        <div class="little-bubble-wrapper-text">
-          <p>Obwohl Neu-Käufer in letzter Zeit nicht gebraucht gekauft haben, finden fast ein Drittel, dass gebrauchte Waren eine attraktive Alternative zu neuen Produkten sind. </p>
-        </div>
-      </div>
-    </div>
-    <div class="little-bubble-wrapper-schlussfolgerungen" id="schlussfolgerungen">      
-      <div class="little-bubble color-s size-s">
-        <div class="little-bubble-wrapper-text">
-          <p>Städter finden “Fridays for Future” unterstützenswerter als Befragte aus ländlichen Gebieten.</p>
-        </div>
-      </div>
-      <div class="little-bubble color-s size-m">
-        <div class="little-bubble-wrapper-text">
-          <p>Befragte aus vorstädtischen Gebieten stimmen eher zu als Städter, dass jeder eine eigene Verantwortung trägt, sich nachhaltig zu verhalten</p>
-        </div>
-      </div>
-      <div class="little-bubble color-s size-m">
-        <div class="little-bubble-wrapper-text">
-          <p class="percent">57%</p>
-          <p>der Befragten, die gebrauchte Produkte verkauft haben, können sich in Zukunft den Kauf gebrauchter Produkte vorstellen, um die Umwelt zu schonen</p>
-        </div>
-      </div>
-      <div class="little-bubble color-s size-s">
-        <div class="little-bubble-wrapper-text">
           <p>Vorstädter lassen sich stärker durch ihr Umfeld motivieren, als Städter</p>
         </div>
       </div>
+      <div class="little-bubble color-z size-l">
+        <div class="little-bubble-wrapper-text">
+          <p class="percent">57%</p>
+          <p>der Befragten, die gebrauchte Produkte verkauft haben, können sich in Zukunft den Kauf gebrauchter Produkte vorstellen, um die Umwelt zu schonen </p>
+        </div>
+      </div>
+      <div class="little-bubble color-z size-l bubble-overlap">
+        <div class="little-bubble-wrapper-text">
+          <p class="percent">68%</p>
+          <p>der Menschen aus ländlichen Gebieten achten auf Ressourcen-schonung im Alltag</p>
+        </div>
+      </div>
+      <p class="bubbles-vs">vs</p>
+      <div class="little-bubble color-z size-l bubble-overlap">
+        <div class="little-bubble-wrapper-text">
+          <p class="percent">64%</p>
+          <p>der Menschen aus der Vorstadt achten auf Ressourcen-schonung im Alltag</p>
+        </div>
+      </div>
+      <!--
+        <img src="src/assets/vs-bubbles-1.svg" alt="Konsumart">
+        <img src="src/assets/vs-bubbles-2.svg" alt="Konsumart"> -->
+        <div class="little-bubble color-z size-l bubble-overlap">
+          <div class="little-bubble-wrapper-text">
+            <p class="percent">53%</p>
+            <p>der Personen aus ländlichen Gegenden sehen gebrauchte Gegenstände als attraktive Alternative an</p>
+          </div>
+        </div>
+        <p class="bubbles-vs">vs</p>
+        <div class="little-bubble color-z size-l bubble-overlap">
+          <div class="little-bubble-wrapper-text">
+            <p class="percent">46%</p>
+            <p>der Personen aus der Stadt sehen gebrauchte Gegenstände als attraktive Alternative an</p>
+          </div>
+        </div>
+        <div class="little-bubble color-z size-s">
+          <div class="little-bubble-wrapper-text">
+            <p>Städter finden “Fridays for Future” unterstützenswerter als Befragte aus ländlichen Gebieten. </p>
+          </div>
+        </div>
+        <div class="little-bubble color-z size-l">
+            <div class="little-bubble-wrapper-text">
+              <p>Befragte aus vorstädtischen Gebieten stimmen eher zu als Städter, dass jeder eine eigene Verantwortung trägt, sich nachhaltig zu verhalten </p>
+            </div>
+        </div>
+      </div>
+      <div class="little-bubble-wrapper-schlussfolgerungen" id="schlussfolgerungen">      
+        <div class="little-bubble color-s size-l">
+          <div class="little-bubble-wrapper-text">
+          <p>Obwohl Neu-Käufer in letzter Zeit nicht gebraucht gekauft haben, finden fast ein Drittel, dass gebrauchte Waren eine attraktive Alternative zu neuen Produkten sind. </p>
+        </div>
+      </div>
+      <div class="little-bubble color-s size-xl">
+        <div class="little-bubble-wrapper-text">
+          <p>Trotz der hohen Zustimmung für ReUse verringert sich das Abfallaufkommen nicht. Die meisten Produkte im Haushalt werden entsorgt und gegen ein Neues eingetauscht.</p>
+        </div>
+      </div>
+      <div class="little-bubble color-s size-l">
+        <div class="little-bubble-wrapper-text">
+          <p>Je älter die Befragten, desto höher ist die Bereitschaft Ressourcen zu schonen</p>
+        </div>
+      </div>
     </div>
-  </div>
-  
+  </div> 
 </section>
 </main>
-</body>
 <script src="/src/js/datasheet.js"></script>
 <script src="/src/js/chart/chart-selection.js"></script>
 <script src="/src/js/chart/selection-change-data.js"></script>
 <script src="/src/js/chart/selection-change-style.js"></script>
 <script src="/src/js/bubbles/bubbles-function.js"></script>
 <script src="/src/js/bubbles/bubbles-style.js"></script>
+</body>
 
 </html>

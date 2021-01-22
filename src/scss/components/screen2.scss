@@ -14,8 +14,8 @@
 }
 .bubble {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 19em;
+    height: 19em;
     content: "";
     border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
     background-image: radial-gradient(
@@ -24,6 +24,7 @@
       rgba(236, 197, 167, 0.32) 70%,
       #ecc5a7 100%
     );
+    animation: wave 5s linear infinite;
     margin: auto;
     transition: 0.3s;
 }
@@ -88,7 +89,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 12em;
+    margin-top: 6em;
 }
 .little-bubble-wrapper-schlussfolgerungen {
     display: flex;
@@ -113,6 +114,7 @@
     position: relative;
     border-radius: 50%;
     font-size: 14px;
+    animation: wave 2s linear infinite;
 }
   
 .color-g {
@@ -143,23 +145,47 @@
 }
   
 .size-s {
-    width: 250px !important;
-    height: 250px !important;
-    bottom: 100px;
+    width: 16em;
+    height: 16em;
+    bottom: 6em;
 }
 .size-m {
-    width: 300px !important;
-    height: 300px !important;
+    width: 18.75em;
+    height: 18.75em;
 }
 .size-l {
-    width: 400px !important;
-    height: 400px !important;
+    width: 25em;
+    height: 25em;
+    font-size: 16px;
+}
+.size-xl {
+    width: 27em;
+    height: 27em;
+    font-size: 16px;
+}
+.bubble-overlap{
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(133.76deg, #c99a8d 15%, #cca094 15.01%, #a3604d 87.42%);
+    opacity: 90% ;
+    z-index: 1;
+}
+.bubbles-vs{
+    position: absolute;
+    z-index: 2;
+    position: relative;
+    right: -53px;
+    bottom: -130px;
 }
 .little-bubble-wrapper-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 11.5em;
 }
   
 .little-bubble p {
@@ -193,7 +219,8 @@
 /*HOVER*/
   
 .bubble:hover {
-    animation: wave 5s linear infinite;
+    width: 20em;
+    height: 20em;
 }
   
 .bubble:hover .bubble-text {
@@ -225,4 +252,43 @@
       font-size: 30px;
     }
   } */
-  
+//Positionierung
+div.color-g:nth-child(6) {
+    bottom: 195px;
+    left: -25px;
+}
+div.little-bubble:nth-child(7) {
+    bottom: 38px;
+    left: -66px;;
+}
+div.little-bubble:nth-child(8) {
+    bottom: 27px;
+    right: -36px;
+}
+div.little-bubble:nth-child(9) {
+    bottom: 160px;
+}
+
+div.color-s:nth-child(1) {
+    bottom: 5.5em;
+}
+div.color-s:nth-child(3) {
+    bottom: 5.5em;
+}
+
+//Positionierung Gemeinsamkeiten
+div.color-z:nth-child(3) {
+    right: -130px;
+}
+div.color-z:nth-child(4) {
+    bottom: 170px;
+    right: 20px;
+}
+
+//Positionierung Zusatzinfos
+div.color-z:nth-child(5) {
+    bottom: 86px;
+}
+div.color-z:nth-child(3) {
+    right: -92px;
+}
