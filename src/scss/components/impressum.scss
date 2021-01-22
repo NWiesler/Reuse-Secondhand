@@ -4,7 +4,7 @@
 	position: fixed;
 	z-index: 999999999999999;
 	top: 0;
-	left: 0;
+	right: 0;
 	background-color: rgb(255,255,255);
 	background-color: rgba(255,255,255,1);
 	overflow-x: hidden;
@@ -52,7 +52,26 @@
 }
 
 .container-people {
-	display: flex;
-	float: left;
-	
+	position: absolute;
+	top: 650px;
+	left: 0;
+
+}
+
+#bubble1 {
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+
+#bubble2 {
+	position: absolute;
+	top: 400px;
+	left:555px;
+}
+
+#bubble3 {
+	position: absolute;
+	top: 200px;
+	right: 100px;
 }
