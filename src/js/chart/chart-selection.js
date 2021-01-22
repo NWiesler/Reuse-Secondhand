@@ -1,5 +1,4 @@
 function showLokalisation() {
-  showLokalisationData()
   setLokalisationActive()
 }
 function showAlter() {

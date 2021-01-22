@@ -1,20 +1,7 @@
-Highcharts.setOptions({
-    chart: {
-        style: {
-            fontFamily: 'Jost, sans-serif',
-            fontSize: '25px',
-            lineWidth: 5,
-        }
-    }
-});
-
 const chart1 = Highcharts.chart('container', {
-    chart: {    
-        styledMode: true,       
+    chart: {           
         inverted: true,
     },
-    
-
     credits: {
         enabled: false
     },
@@ -25,24 +12,15 @@ const chart1 = Highcharts.chart('container', {
     },
     title: {
         text: ''
-
-    },
-    accessibility: {
-        keyboardNavigation: {
-            seriesNavigation: {
-                mode: 'serialize'
-            }
-        }
     },
     legend: {
         align: 'right',
         verticalAlign: 'top',
-
-
-  
+        formatter: function() {
+            return this.y + ' %';
+        }
     },
     xAxis: {
-        className: 'highcharts-xaxis',
         categories: [
             'Nicht nur beim Konsum, auch im Alltag wird nachhaltiges Handeln wichtiger.',
             'Gebrauchte Produkte sind gut für die Umwelt.',
@@ -54,8 +32,7 @@ const chart1 = Highcharts.chart('container', {
             'Nachhaltig zu konsumieren bedeutet für mich gebrauchte Produkte zu kaufen.',
             'Gebrauchte Produkte sind etwas für Leute, die sich neue Ware nicht leisten können.'
         ],
-        crosshair: true,   
-        
+        crosshair: true,       
     },
     yAxis: {
         minorTickInterval: 25,
@@ -68,36 +45,39 @@ const chart1 = Highcharts.chart('container', {
         max: 100,
         labels: {
             formatter: function() {
-                return this.value + ' %';
+            return this.value + ' %';
             }
-        },
-  
+            },  
     },
     tooltip: {
         formatter: function() {
             return this.y + ' %';
         }
     },
-
-   
     series: [{
         name: 'Unter 30',
-        data: [69, 43, 72, 53, 48, 44, 44, 45, 21]
+        color: '#5F8B96',
+        data: [69, 43, 72, 53, 48, 44, 44, 45, 21],
+        marker: {
+            fillColor: '#ffffff',
+            lineColor: null,
+            lineWidth: 3,
+        }
     }, {
         name: 'Über 30',
+        color: '#265870',
         data: [72, 65, 62, 61, 54, 48, 47, 40, 21],
         marker: {
-            symbol: 'circle'
-        }
+            symbol: 'circle',
+            fillColor: '#FFFFFF',
+            lineWidth: 3,
+            lineColor: null
+        },
     }],
-    
-    
 });
 
-//Second Chart
-
 const chart2 = Highcharts.chart('container2', {
-    chart: {    
+    chart: {           
         inverted: true,
     },
     credits: {
@@ -111,16 +91,9 @@ const chart2 = Highcharts.chart('container2', {
     title: {
         text: ''
     },
-    accessibility: {
-        keyboardNavigation: {
-            seriesNavigation: {
-                mode: 'serialize'
-            }
-        }
-    },
     legend: {
         align: 'center',
-        verticalAlign: 'top', 
+        verticalAlign: 'top',
     },
     xAxis: {
         opposite: true,
@@ -133,7 +106,7 @@ const chart2 = Highcharts.chart('container2', {
             'Ich sehe nicht ein, für Umwelt und Klima Abstriche bei meinem Konsumverhalten zu machen.',
             'Mir ist wichtig, immer die neusten Trends und Produkte zu besitzen.',
         ],
-        crosshair: true,        
+        crosshair: true,       
     },
     yAxis: {
         minorTickInterval: 25,
@@ -146,43 +119,34 @@ const chart2 = Highcharts.chart('container2', {
         max: 100,
         labels: {
             formatter: function() {
-                return this.value + ' %';
+            return this.value + ' %';
             }
-        },
-  
+            },  
     },
-   
     tooltip: {
         formatter: function() {
             return this.y + ' %';
         }
     },
-
-
-
     series: [{
         name: 'Unter 30',
         color: '#5F8B96',
         data: [79, 77, 50, 47, 45, 21, 18],
         marker: {
-            symbol: 'circle',
-            fillColor: '#FFFFFF',
+            fillColor: '#ffffff',
+            lineColor: null,
             lineWidth: 3,
-            lineColor: null // inherit from series
-                    
         }
     }, {
         name: 'Über 30',
         color: '#265870',
         data: [88 , 83, 46, 44, 38, 14, 10],
-        lineWidth: 5,
         marker: {
             symbol: 'circle',
             fillColor: '#FFFFFF',
             lineWidth: 3,
-            lineColor: null // inherit from series
-                    
-        }
-    }]
+            lineColor: null
+        },
+    }],
 });
 
