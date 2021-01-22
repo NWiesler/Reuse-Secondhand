@@ -22,22 +22,20 @@ body{
    height: auto;
 }
 main {
-  height: 1050px;
-  width: 1680px;
-
+  //height: 1050px;
+  //width: 1680px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-
-
 }
 section {
-  height: 1050px;
-  width: 1680px;
-  padding: 2rem;
-  font-size: 1.4rem;
+  //height: 1050px;
+  //width: 1680px;
+  height: 100vh;
+  margin: 2em;
+  font-size: 1.4em;
   font-weight: 100;
-  scroll-snap-stop: always;
-
-  scroll-snap-align: center;
+}
+#nav_anfang{
+   margin: 0;
 }
