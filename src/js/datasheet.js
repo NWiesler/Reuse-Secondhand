@@ -1,3 +1,11 @@
+Highcharts.setOptions({
+    chart: {
+        style: {
+            fontFamily: 'Jost',
+            fontSize: '20px',
+        }
+    }
+});
 const chart1 = Highcharts.chart('container', {
     chart: {           
         inverted: true,
@@ -16,8 +24,8 @@ const chart1 = Highcharts.chart('container', {
     legend: {
         align: 'right',
         verticalAlign: 'top',
-        formatter: function() {
-            return this.y + ' %';
+        itemStyle:{
+            fontSize: '14px',
         }
     },
     xAxis: {
@@ -32,7 +40,12 @@ const chart1 = Highcharts.chart('container', {
             'Nachhaltig zu konsumieren bedeutet für mich gebrauchte Produkte zu kaufen.',
             'Gebrauchte Produkte sind etwas für Leute, die sich neue Ware nicht leisten können.'
         ],
-        crosshair: true,       
+        crosshair: true, 
+        labels:{
+            style:{
+                fontSize: '14px'
+            }
+        }           
     },
     yAxis: {
         minorTickInterval: 25,
@@ -62,6 +75,7 @@ const chart1 = Highcharts.chart('container', {
             fillColor: '#ffffff',
             lineColor: null,
             lineWidth: 3,
+            radius: 6
         }
     }, {
         name: 'Über 30',
@@ -94,6 +108,9 @@ const chart2 = Highcharts.chart('container2', {
     legend: {
         align: 'center',
         verticalAlign: 'top',
+        itemStyle:{
+            fontSize: '14px',
+        }
     },
     xAxis: {
         opposite: true,
@@ -106,7 +123,12 @@ const chart2 = Highcharts.chart('container2', {
             'Ich sehe nicht ein, für Umwelt und Klima Abstriche bei meinem Konsumverhalten zu machen.',
             'Mir ist wichtig, immer die neusten Trends und Produkte zu besitzen.',
         ],
-        crosshair: true,       
+        crosshair: true,   
+        labels:{
+            style:{
+                fontSize: '14px'
+            }
+        }       
     },
     yAxis: {
         minorTickInterval: 25,
