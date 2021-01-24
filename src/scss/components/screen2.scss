@@ -58,7 +58,7 @@
     border-radius: 3px;
     font-family: Jost, sans-serif;
     font-size: 1em;
-    font-weight: 800;
+    font-weight: 800; 
     color: white;
     height: 2.5em;
     display: none;
@@ -84,12 +84,16 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 8em;
+    max-width: 70em;
+    margin: 8em auto 0 auto; 
 }
 .little-bubble-wrapper-zusatzinfos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 6em;
+    position: relative;
+    margin: 6em auto 0 auto;
+    max-width: 76em;
 }
 .little-bubble-wrapper-schlussfolgerungen {
     display: flex;
@@ -114,7 +118,7 @@
     position: relative;
     border-radius: 50%;
     font-size: 14px;
-    animation: wave 2s linear infinite;
+    animation: wave 5s linear infinite;
 }
   
 .color-g {
@@ -163,23 +167,6 @@
     height: 27em;
     font-size: 16px;
 }
-.bubble-overlap{
-    background-image: radial-gradient(
-        50% 50% at 50% 50%,
-        rgba(255, 255, 255, 0.6) 0%,
-        rgba(255, 255, 255, 0) 100%
-      ),
-      linear-gradient(133.76deg, #c99a8d 15%, #cca094 15.01%, #a3604d 87.42%);
-    opacity: 90% ;
-    z-index: 1;
-}
-.bubbles-vs{
-    position: absolute;
-    z-index: 2;
-    position: relative;
-    right: -53px;
-    bottom: -130px;
-}
 .little-bubble-wrapper-text {
     position: absolute;
     top: 50%;
@@ -211,6 +198,73 @@
     padding-bottom: 3px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+//Overlapped bubbles
+.bubble-overlap{
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(133.76deg, #c99a8d 15%, #cca094 15.01%, #a3604d 87.42%);
+    opacity: 90% ;
+    z-index: 1;
+}
+.wrapper-bubble-overlap{
+    display: flex; 
+}
+.big-overlap{
+    :nth-child(3){
+        top: -5.125em;
+        margin: -2em 0 0 -6em;
+    } 
+}
+
+//vs big overlap positionieren   
+div.wrapper-bubble-overlap:nth-child(3) > p:nth-child(2) {
+    position: absolute;
+    top: 126px;
+    right: 426px;
+}
+// small overlap bubbles positionieren
+.small-overlap{
+    position: relative;
+}
+/*
+div.wrapper-bubble-overlap:nth-child(4) {
+    margin: -4em 0 0 -2em;
+}
+div.wrapper-bubble-overlap:nth-child(6) {
+    margin: 9em 0 0 -6em;
+}*/
+/*
+.small-overlap :nth-child(1) {
+    margin: -4em 0 0 -2em;
+}
+small-overlap :nth-child(3) {
+    margin: 9em 0 0 -6em;
+}*/
+div.wrapper-bubble-overlap:nth-child(4) > div:nth-child(1) {
+    margin: -7.5em 0 0 -4em;
+}
+div.wrapper-bubble-overlap:nth-child(4) > div:nth-child(3) {
+    margin: 2.5em 0 0 -5.5em
+}
+div.color-z:nth-child(5) {
+    margin: 0 0 0 -3em;
+}
+
+   
+//vs small overlap positionierne
+div.wrapper-bubble-overlap:nth-child(4) > p:nth-child(2) {
+    position: absolute;
+    bottom: 263px;
+    right: 347px;
+}
+   
+.bubbles-vs{
+    z-index: 2;
 }
 /* Funktionen */
 .bubble-row-2 .disabled {
@@ -276,19 +330,22 @@ div.color-s:nth-child(3) {
     bottom: 5.5em;
 }
 
-//Positionierung Gemeinsamkeiten
-div.color-z:nth-child(3) {
-    right: -130px;
+/*Positionierung Gemeinsamkeiten
+div.color-z:nth-child(2) {
+    bottom: -8px;
 }
 div.color-z:nth-child(4) {
-    bottom: 170px;
-    right: 20px;
+    bottom: -20px;
+    right: -25px;
 }
+div.color-z:nth-child(5) {
+    bottom: -73px;
+    right: 28px;
+}
+div.color-z:nth-child(6) {
+    right: 42px;
+    bottom: 81px;   
+}*/
 
 //Positionierung Zusatzinfos
-div.color-z:nth-child(5) {
-    bottom: 86px;
-}
-div.color-z:nth-child(3) {
-    right: -92px;
-}
+
