@@ -51,6 +51,9 @@ document.getElementById('btn-alter').addEventListener('click', () => {
             min: 0,
             max: 100, 
             labels: {
+                style:{
+                    fontSize: '14px',
+                },
                 formatter: function() {
                 return this.value + ' %';
                 }
@@ -69,6 +72,7 @@ document.getElementById('btn-alter').addEventListener('click', () => {
                 fillColor: '#ffffff',
                 lineColor: null,
                 lineWidth: 3,
+                radius: 6
             }
         }, {
             name: 'Über 30',
@@ -78,7 +82,8 @@ document.getElementById('btn-alter').addEventListener('click', () => {
                 symbol: 'circle',
                 fillColor: '#FFFFFF',
                 lineWidth: 3,
-                lineColor: null
+                lineColor: null,
+                radius: 6
             },
         }],
     });
@@ -134,6 +139,9 @@ document.getElementById('btn-alter').addEventListener('click', () => {
             min: 0,
             max: 100,
             labels: {
+                style:{
+                    fontSize: '14px',
+                },
                 formatter: function() {
                 return this.value + ' %';
                 }
@@ -152,6 +160,7 @@ document.getElementById('btn-alter').addEventListener('click', () => {
                 fillColor: '#ffffff',
                 lineColor: null,
                 lineWidth: 3,
+                radius: 6
             }
         }, {
             name: 'Über 30',
@@ -161,7 +170,8 @@ document.getElementById('btn-alter').addEventListener('click', () => {
                 symbol: 'circle',
                 fillColor: '#FFFFFF',
                 lineWidth: 3,
-                lineColor: null
+                lineColor: null,
+                radius: 6
             },
         }],
     });
@@ -220,6 +230,9 @@ document.getElementById('btn-lokalisation').addEventListener('click', () => {
             min: 0,
             max: 100,
             labels: {
+                style:{
+                    fontSize: '14px',
+                },
                 formatter: function() {
                 return this.value + ' %';
                 }
@@ -238,6 +251,7 @@ document.getElementById('btn-lokalisation').addEventListener('click', () => {
                 fillColor: '#ffffff',
                 lineColor: null,
                 lineWidth: 3,
+                radius: 6
             }
         }, {
             name: 'Ost',
@@ -247,7 +261,8 @@ document.getElementById('btn-lokalisation').addEventListener('click', () => {
                 symbol: 'circle',
                 fillColor: '#FFFFFF',
                 lineWidth: 3,
-                lineColor: null
+                lineColor: null,
+                radius: 6
             },
         }],
     });
@@ -303,6 +318,9 @@ document.getElementById('btn-lokalisation').addEventListener('click', () => {
             min: 0,
             max: 100,
             labels: {
+                style:{
+                    fontSize: '14px',
+                },
                 formatter: function() {
                 return this.value + ' %';
                 }
@@ -321,6 +339,7 @@ document.getElementById('btn-lokalisation').addEventListener('click', () => {
                 fillColor: '#ffffff',
                 lineColor: null,
                 lineWidth: 3,
+                radius: 6,
             }
         }, {
             name: 'Ost',
@@ -330,7 +349,8 @@ document.getElementById('btn-lokalisation').addEventListener('click', () => {
                 symbol: 'circle',
                 fillColor: '#FFFFFF',
                 lineWidth: 3,
-                lineColor: null
+                lineColor: null,
+                radius: 6
             },
         }],
     });
@@ -389,6 +409,9 @@ document.getElementById('btn-konsumart').addEventListener('click', () => {
             min: 0,
             max: 100, 
             labels: {
+                style:{
+                    fontSize: '14px',
+                },
                 formatter: function() {
                 return this.value + ' %';
                 }
@@ -407,6 +430,7 @@ document.getElementById('btn-konsumart').addEventListener('click', () => {
                 fillColor: '#ffffff',
                 lineColor: null,
                 lineWidth: 3,
+                radius: 6
             }
         }, {
             name: 'Gebraucht-Käufer:innen',
@@ -416,7 +440,8 @@ document.getElementById('btn-konsumart').addEventListener('click', () => {
                 symbol: 'circle',
                 fillColor: '#FFFFFF',
                 lineWidth: 3,
-                lineColor: null
+                lineColor: null,
+                radius: 6
             },
         }],
     });
@@ -472,6 +497,9 @@ document.getElementById('btn-konsumart').addEventListener('click', () => {
             min: 0,
             max: 100, 
             labels: {
+                style:{
+                    fontSize: '14px',
+                },
                 formatter: function() {
                 return this.value + ' %';
                 }
@@ -490,6 +518,7 @@ document.getElementById('btn-konsumart').addEventListener('click', () => {
                 fillColor: '#ffffff',
                 lineColor: null,
                 lineWidth: 3,
+                radius: 6
             }
         }, {
             name: 'Gebraucht-Käufer:innen',
@@ -499,7 +528,8 @@ document.getElementById('btn-konsumart').addEventListener('click', () => {
                 symbol: 'circle',
                 fillColor: '#FFFFFF',
                 lineWidth: 3,
-                lineColor: null
+                lineColor: null,
+                radius: 6
             },
         }],
     });

@@ -1,5 +1,6 @@
 Highcharts.setOptions({
     chart: {
+        backgroundColor: '#ff0000',
         style: {
             fontFamily: 'Jost',
             fontSize: '20px',
@@ -7,7 +8,7 @@ Highcharts.setOptions({
     }
 });
 const chart1 = Highcharts.chart('container', {
-    chart: {           
+    chart: {      
         inverted: true,
     },
     credits: {
@@ -25,7 +26,7 @@ const chart1 = Highcharts.chart('container', {
         align: 'right',
         verticalAlign: 'top',
         itemStyle:{
-            fontSize: '14px',
+            fontSize: '16px',
         }
     },
     xAxis: {
@@ -43,13 +44,14 @@ const chart1 = Highcharts.chart('container', {
         crosshair: true, 
         labels:{
             style:{
-                fontSize: '14px'
+                fontSize: '16px'
             }
-        }           
+        }        
     },
     yAxis: {
         minorTickInterval: 25,
         tickInterval: 100,
+        
         title: {
             text: 'Zustimmung'
         },
@@ -57,6 +59,9 @@ const chart1 = Highcharts.chart('container', {
         min: 0,
         max: 100,
         labels: {
+            style:{
+                fontSize: '14px',
+            },
             formatter: function() {
             return this.value + ' %';
             }
@@ -76,16 +81,18 @@ const chart1 = Highcharts.chart('container', {
             lineColor: null,
             lineWidth: 3,
             radius: 6
-        }
+        },
     }, {
         name: 'Über 30',
         color: '#265870',
+        lineWidth: 5,
         data: [72, 65, 62, 61, 54, 48, 47, 40, 21],
         marker: {
             symbol: 'circle',
             fillColor: '#FFFFFF',
             lineWidth: 3,
-            lineColor: null
+            lineColor: null,
+            radius: 6
         },
     }],
 });
@@ -109,7 +116,7 @@ const chart2 = Highcharts.chart('container2', {
         align: 'center',
         verticalAlign: 'top',
         itemStyle:{
-            fontSize: '14px',
+            fontSize: '16px',
         }
     },
     xAxis: {
@@ -126,7 +133,7 @@ const chart2 = Highcharts.chart('container2', {
         crosshair: true,   
         labels:{
             style:{
-                fontSize: '14px'
+                fontSize: '16px'
             }
         }       
     },
@@ -140,6 +147,9 @@ const chart2 = Highcharts.chart('container2', {
         min: 0,
         max: 100,
         labels: {
+            style:{
+                fontSize: '14px',
+            },
             formatter: function() {
             return this.value + ' %';
             }
@@ -158,6 +168,7 @@ const chart2 = Highcharts.chart('container2', {
             fillColor: '#ffffff',
             lineColor: null,
             lineWidth: 3,
+            radius: 6
         }
     }, {
         name: 'Über 30',
@@ -167,7 +178,8 @@ const chart2 = Highcharts.chart('container2', {
             symbol: 'circle',
             fillColor: '#FFFFFF',
             lineWidth: 3,
-            lineColor: null
+            lineColor: null,
+            radius: 6
         },
     }],
 });
