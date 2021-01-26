@@ -1,0 +1,32 @@
+.container-charts{
+
+    display: flex;
+    justify-content: center;
+    // background-image: url('C:\Users\fischiju\.DHBW\5. Semester\WD 3\Reuse-Secondhand\src\assets\charts\background-blue.svg');
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper-bg-charts{
+    position: relative;
+    margin: 0;
+}
+.container-background{
+    position: absolute;
+    top: 2em;
+    z-index: 1;
+    img{
+        height: 100vh;
+        width: 100%;
+    }
+
+}
+
+/*
+background-image: url('src/assets/charts/background-blue.svg');
+  background-color: red;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;*/
