@@ -1,50 +1,32 @@
-
-@import 'https://code.highcharts.com/css/highcharts.css';
-.chart-wrapper{
- display: flex;
-}
 .container-charts{
+
     display: flex;
     justify-content: center;
+    // background-image: url('C:\Users\fischiju\.DHBW\5. Semester\WD 3\Reuse-Secondhand\src\assets\charts\background-blue.svg');
+    position: relative;
+    z-index: 2;
 }
-.highcharts-container {
-    font-family: "Jost", sans-serif;
-    font-size: 1.125em;
-    line-height: 1.5;
+
+.wrapper-bg-charts{
+    position: relative;
     margin: 0;
 }
-
-.highcharts-plot-background {
-    fill: $color-gradient-blue;
-}
-
-.highcharts-color-0 {
-    fill: #ffffff;
-    stroke: $color-aqua-700;
-    stroke-width: 3px;
-}
-.highcharts-color-2 {
-    fill: #ff0000;
-    stroke: $color-aqua-700;
-    stroke-width: 3px;
-}
-
-.highcharts-color-1 {
-
-    fill: #ffffff;
-    stroke: $color-blue-800;
-    stroke-width: 3px;
+.container-background{
+    position: absolute;
+    top: 2em;
+    z-index: 1;
+    img{
+        height: 100vh;
+        width: 100%;
+    }
 
 }
-.highcharts-title {
-    fill: black;
-    font-family: 'Merriweather', serif;
-    line-height: 1.2;
-    font-size: 2.25rem;
-    font-weight: bold;
 
-  }
+/*
+background-image: url('src/assets/charts/background-blue.svg');
+  background-color: red;
 
-
-/*Tooltip*/
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;*/

@@ -3,6 +3,7 @@ function setLokalisationActive(){
     document.getElementById("icon-lokalisation").src="src/assets/charts/selected-localisation.svg";
     document.getElementById("icon-alter").src="src/assets/charts/unselected-age.png";
     document.getElementById("icon-konsumart").src="src/assets/charts/unselected-konsum.svg";
+    document.getElementById("chart-bg").src="src/assets/charts/background-charts-terracotta.svg";
 
     document.getElementById("btn-lokalisation").className = "btn-chart-selection active active-lokalisation";
     document.getElementById("btn-alter").className = "btn-chart-selection disabled";
@@ -14,6 +15,7 @@ function setAlterActive(){
     document.getElementById("icon-lokalisation").src="src/assets/charts/unselected-localisation.svg";
     document.getElementById("icon-alter").src="src/assets/charts/selected-age.png";
     document.getElementById("icon-konsumart").src="src/assets/charts/unselected-konsum.svg";
+    document.getElementById("chart-bg").src="src/assets/charts/background-charts-blue.svg";
 
     document.getElementById("btn-lokalisation").className = "btn-chart-selection disabled";
     document.getElementById("btn-alter").className = "btn-chart-selection active active-alter";
@@ -25,6 +27,7 @@ function setKonsumartActive(){
     document.getElementById("icon-lokalisation").src="src/assets/charts/unselected-localisation.svg";
     document.getElementById("icon-alter").src="src/assets/charts/unselected-age.png";
     document.getElementById("icon-konsumart").src="src/assets/charts/selected-konsum.svg";
+    document.getElementById("chart-bg").src="src/assets/charts/background-charts-forest.svg";
 
     document.getElementById("btn-lokalisation").className = "btn-chart-selection disabled";
     document.getElementById("btn-alter").className = "btn-chart-selection disabled";
