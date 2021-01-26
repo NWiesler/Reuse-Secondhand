@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="dist/main.css">
   <link rel="icon" type="image/png" href="/favicon.svg" sizes="32x32">
   <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
   <style>
     .background-red{
     width: 100%;
@@ -20,12 +20,6 @@
 </head>
 <body>
   <div>
-    <svg style="display:none;">
-      <symbol id="icon-nav-circle" xmlns="http://www.w3.org/2000/svg"><width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="#CFD59F"/>
-      </symbol>
-      <symbol id="icon-nav-circle" xmlns="http://www.w3.org/2000/svg"><width="7" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 1L1 5l4.5 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </symbol>
-    </svg>
     <nav class="navigation sticky" role="navigation">
       <ul class="container-nav-links" role="menubar">
         <li role="menuitem">
@@ -64,7 +58,7 @@
         <li role="menuitem">
           <!-- <img src="src/assets/icon-interpretationen.svg" alt="Icon Ziel der Studie"> -->
           <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve"><style type="text/css">.st1{fill:#666666;} .st3{fill:#666666;stroke:#F3F1F1;}</style><circle class="st1" cx="14.5" cy="15.5" r="5.5"/><circle class="st3" cx="7.3" cy="7.3" r="6.8"/></svg>
-          <a class="p-large" href="#nav_Bubbles">
+          <a class="p-large" href="#bubbles">
           Interpretationen</a>
         </li>
         <hr>
@@ -87,16 +81,16 @@
       <br>
           <p class="p-large text-center">Semesterprojektarbeit im Kurs „Interaktives Informationsdesign und Visual Storytelling“</p>
             <div class="container-speechbubbles-impressum">
-              <img id="bubble1" src="src/assets/impressumbubble1.svg" alt="Wer sind wir">
-              <img id="bubble2" src="src/assets/impressumbubble2.svg" alt="Studie">
-              <img id="bubble3" src="src/assets/impressumbubble3.svg" alt="DHBW Mosbach">
+              <img id="speechbubble1" src="src/assets/impressumbubble1.svg" alt="Wer sind wir">
+              <img id="speechbubble2" src="src/assets/impressumbubble2.svg" alt="Studie">
+              <img id="speechbubble3" src="src/assets/impressumbubble3.svg" alt="DHBW Mosbach">
             </div>
         <div class="container-people">
             <img src="src/assets/impressumpeople.svg" alt="Menschen">
         </div>
     </div>
   </div>
-<div>
+
 <!--Content-->
 <main>
   <section id="nav_Anfang">
@@ -132,8 +126,8 @@
             <img src="src/assets/trash.svg" alt="Mülleimer">
             <img src="src/assets/background-green.png" alt="Hintergrundfläche grün">
           </div>
-        </div>
-        </div>
+      </div>    
+    </div> 
 </section>
 <section id="nav_Herausgeber">
     <div class="container-studie">
@@ -210,10 +204,6 @@
   </div>
 </div>
 <section id="nav_Daten">
-
-
-
-<section>
 <div class="container-chart-header">
   <div id="text-meinung">
     <h3>Meinung</h3>
@@ -227,7 +217,7 @@
     <button id="btn-alter" onclick="showAlter()" class="btn-chart-selection active active-alter">
       <img id="icon-alter" src="src/assets/charts/selected-age.png" alt="Konsumart">
     </button>
-    <button id="btn-konsumart"onclick="showKonsumart()" class="btn-chart-selection disabled">
+    <button id="btn-konsumart" onclick="showKonsumart()" class="btn-chart-selection disabled">
       <img id="icon-konsumart" src="src/assets/charts/unselected-konsum.svg" alt="Konsumart">
     </button>
   </div>
@@ -258,57 +248,191 @@
     <img src="src/assets/section-divider-interpretationen.svg" alt="Konsumart">
   </div>
 </div>
-<section id="nav_Bubbles">
-  <div id="bubbles">
+<!-- Bubbles -->
+<section id="bubbles">
+  <div class="bubble-intro">
+    <div class="container-intro-text">
+      <p class="topline topline-green">Übersicht</p>
+      <h2 id="bubble-intro-headline">Interpretationen</h2>
+      <p>Innerhalb dieser Themenblasen wurden interessante Key Findings aus der Studie zusammen gefasst. </p>
+    </div>  
+    <button id="button-uebersicht" class="bubble-button"> 
+      <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM20 7L1 7V9L20 9V7Z" fill="#FFFFFF"/>
+      </svg>
+      zur Übersicht
+    </button>
+  </div>
+
+  <!-- Kreis in Reihe 1  -->
+  <div class="bubble-blender">
     <div class="bubble-row-1">
-        <div class="bubble" id="bubble-zusatzinfo">
-          <div class="bubble-text-wrapper">
-            <a href="#" class="bubble-text">Zusatzinfos</a>
-          </div>
-        </div>
-        <!-- Little circle-->
-        <div class="small-bubble">
-          fwhejif
+        <div class="bubble" id="bubble1">
+            <div class="bubble-text-wrapper">
+              <a href="#" class="bubble-text">Zusatzinfos</a>
+            </div>
         </div>
     </div>
     <!-- Kreise in Reihe 2  -->
     <div class="bubble-row-2">
-        <button class="bubble" id="bubble-gemeinsamkeiten">
-          <div class="bubble-text-wrapper">
-            <a href="#" class="bubble-text"><span id="bubble-text-lowercase">Interessante</span> Gemeinsamkeiten</a>
-          </div>
-        </button>
-        <button class="bubble" id="bubble-schlussfolgerungen">
+        <div class="bubble" id="bubble2">
+            <div class="bubble-text-wrapper">
+              <a href="#" class="bubble-text"><span id="bubble-text-lowercase">Interessante</span> Gemeinsamkeiten</a>
+            </div>
+        </div>
+        <div class="bubble" id="bubble3">
           <div class="bubble-text-wrapper">
             <a href="#" class="bubble-text">Schlussfolgerungen</a>
           </div>
-        </button>
-
+        </div>
     </div>
-
-    <!-- Gemeinsamkeiten  -->
-    <button class="small-bubble">
-      <div class="small-bubble-text-wrapper">
-        <p class="small-bubble-tag">Meinung</p>
-        <p class="small-bubble-percent">60%</p>
-        <p class="small-bubble-description">der Befragten geht davon aus, dass nachhaltiges Handeln in Zukunft wichtiger wird</p>
-      </div>
-    </button>
   </div>
-  </section>
+  <div class="little-bubble-wrapper">
+    <div class="little-bubble-wrapper-gemeinsamkeiten" id="gemeinsamkeiten">      
+      <div class="little-bubble color-g size-s">
+        <div class="little-bubble-wrapper-text">
+          <p>Je älter die Befragten, desto höher ist die Bereitschaft Ressourcen zu schonen</p>
+        </div>
+      </div>
+      <div class="little-bubble color-g size-m">
+        <div class="little-bubble-wrapper-text">
+          <p class="percent">60%</p>
+          <p> gehen davon aus, dass nachhaltiges Handeln in Zukunft wichtiger wird</p>
+        </div>
+      </div>
+      <div class="little-bubble color-g size-l">
+        <div class="little-bubble-wrapper-text">
+          <p>Obwohl Neu-Käufer in letzter Zeit nicht gebraucht gekauft haben, finden fast ein Drittel, dass gebrauchte Waren eine attraktive Alternative zu neuen Produkten sind.</p>
+        </div>
+      </div>
+      <div class="little-bubble color-g size-m">
+        <div class="little-bubble-wrapper-text">
+          <p class="percent">45%</p>
+          <p>werden zu nachhaltigem Verhalten motiviert, wenn es Personen im engeren Umfeld auch tun</p>
+        </div>
+      </div>
+      <div class="little-bubble color-g size-s">
+        <div class="little-bubble-wrapper-text">
+          <p>Die Akzeptanz Produkte wiederzuverwenden ist hoch, auch wenn Unterschiede gab</p>
+        </div>
+      </div>
+      <div class="little-bubble color-g size-m">
+        <div class="little-bubble-wrapper-text">
+          <p>Die meisten Befragten kaufen gebrauchte Produkte, da sie günstiger sind. Wichtig ist für sie aber auch der Klima- und Ressourcenschutz</p>
+        </div>
+      </div>
+      <div class="little-bubble color-g size-m">
+        <div class="little-bubble-wrapper-text">
+          <p class="percent">64%</p>
+          <p>denken, dass gebrauchte Produkte gut für die Umwelt sind</p>
+        </div>
+      </div>
+      <div class="little-bubble color-g size-m">
+        <div class="little-bubble-wrapper-text">
+          <p class="percent">XX%</p>
+          <p>Fast jeder Zweite kann sich vorstellen, in Zukunft mehr gebraucht zu kaufen, um die Umwelt zu schonen</p>
+        </div>
+      </div>
+      <div class="little-bubble color-g size-m">
+        <div class="little-bubble-wrapper-text">
+          <p class="percent">30%</p>
+          <p>Fast ein Drittel hat das eigene Verhalten geändert, seit Umweltschutz verstärkt in den Medien vertreten ist.</p>
+        </div>
+      </div>
+    </div>
+    <div class="little-bubble-wrapper-zusatzinfos" id="zusatzinfos">      
+      <div class="little-bubble color-z size-s">
+        <div class="little-bubble-wrapper-text">
+          <p>Vorstädter lassen sich stärker durch ihr Umfeld motivieren, als Städter</p>
+        </div>
+      </div>
+      <div class="little-bubble color-z size-xl">
+        <div class="little-bubble-wrapper-text">
+          <p class="percent">57%</p>
+          <p>der Befragten, die gebrauchte Produkte verkauft haben, können sich in Zukunft den Kauf gebrauchter Produkte vorstellen, um die Umwelt zu schonen </p>
+        </div>
+      </div>
+
+      <div class="wrapper-bubble-overlap big-overlap">
+        <div class="little-bubble color-z size-l bubble-overlap">
+          <div class="little-bubble-wrapper-text">
+            <p class="percent">68%</p>
+            <p>der Menschen aus ländlichen Gebieten achten auf Ressourcen-schonung im Alltag</p>
+          </div>
+        </div>
+        <p class="bubbles-vs">vs</p>
+        <div class="little-bubble color-z size-l bubble-overlap">
+          <div class="little-bubble-wrapper-text">
+            <p class="percent">64%</p>
+            <p>der Menschen aus der Vorstadt achten auf Ressourcen-schonung im Alltag</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-bubble-overlap small-overlap">
+        <div class="little-bubble color-z size-l bubble-overlap">
+          <div class="little-bubble-wrapper-text">
+            <p class="percent">53%</p>
+            <p>der Personen aus ländlichen Gegenden sehen gebrauchte Gegenstände als attraktive Alternative an</p>
+          </div>
+        </div>
+        <p class="bubbles-vs">vs</p>
+        <div class="little-bubble color-z size-l bubble-overlap">
+          <div class="little-bubble-wrapper-text">
+            <p class="percent">46%</p>
+            <p>der Personen aus der Stadt sehen gebrauchte Gegenstände als attraktive Alternative an</p>
+          </div>
+        </div>
+      </div>
+
+        <div class="little-bubble color-z size-l">
+            <div class="little-bubble-wrapper-text">
+              <p>Befragte aus vorstädtischen Gebieten stimmen eher zu als Städter, dass jeder eine eigene Verantwortung trägt, sich nachhaltig zu verhalten </p>
+            </div>
+        </div>
+        <div class="little-bubble color-z size-s">
+          <div class="little-bubble-wrapper-text">
+            <p>Städter finden “Fridays for Future” unterstützenswerter als Befragte aus ländlichen Gebieten. </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="little-bubble-wrapper-schlussfolgerungen" id="schlussfolgerungen">      
+        <div class="little-bubble color-s size-l">
+          <div class="little-bubble-wrapper-text">
+          <p>Obwohl Neu-Käufer in letzter Zeit nicht gebraucht gekauft haben, finden fast ein Drittel, dass gebrauchte Waren eine attraktive Alternative zu neuen Produkten sind. </p>
+        </div>
+      </div>
+      <div class="little-bubble color-s size-xl">
+        <div class="little-bubble-wrapper-text">
+          <p>Trotz der hohen Zustimmung für ReUse verringert sich das Abfallaufkommen nicht. Die meisten Produkte im Haushalt werden entsorgt und gegen ein Neues eingetauscht.</p>
+        </div>
+      </div>
+      <div class="little-bubble color-s size-l">
+        <div class="little-bubble-wrapper-text">
+          <p>Je älter die Befragten, desto höher ist die Bereitschaft Ressourcen zu schonen</p>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
 </main>
-</body>
+<script src="/src/js/bubbles/bubbles-function.js"></script>
+<script src="/src/js/bubbles/bubbles-style.js"></script>
 <script src="/src/js/datasheet.js"></script>
 <script src="/src/js/chart/chart-selection.js"></script>
 <script src="/src/js/chart/selection-change-data.js"></script>
 <script src="/src/js/chart/selection-change-style.js"></script>
+
 <script>
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
-
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
   </script>
+  </body>
 </html>

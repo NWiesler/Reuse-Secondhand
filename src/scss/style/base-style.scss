@@ -24,20 +24,20 @@ body{
 main {
   height: 1050px;
   width: 100%;
-
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-
-
 }
 section {
   height: 1050px;
   width: 1680px;
+  height: 100vh;
   padding: 2rem;
   font-size: 1.4rem;
   font-weight: 100;
   scroll-snap-stop: always;
-
   scroll-snap-align: center;
+}
+#nav_Anfang{
+   margin: 0;
 }
