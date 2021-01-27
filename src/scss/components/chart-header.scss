@@ -1,26 +1,34 @@
+#nav_daten{
+    padding-top: 1em;
+}
 .container-chart-header{
     display: flex;
     justify-content: space-between;
     align-items: end;
     margin-bottom: 2em;
-    div{
-        max-width: 22em;
+    margin-top: 6em;
+    
+    #text-meinung{
+        margin-left: 5em;
+        max-width: 18em;
         h3{
             margin: 0 0 0.5em 0;
         }
     }
-    #text-meinung{
-        margin-left: 8em;
-    }
     #text-konsum{
         text-align: right;
         margin-right: 8em;
+        max-width: 18em;
+        h3{
+            margin: 0 0 0.5em 0;
+        }
     }    
 }
 .container-chart-selection{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin-left: -2em;
 }
 .btn-chart-selection{
     color: $color-white;
@@ -33,12 +41,12 @@ button.btn-chart-selection:nth-child(2){
 }
 .active{
     font-size: 1.125em;
-    width: 9.5em;
-    height: 9.5em;
+    width: 6.5em;
+    height: 6.5em;
     animation: ease-in 10s;
     img{
         width: auto;  
-        height: 6.5em;
+        height: 4.5em;
         object-fit: cover;
         margin: 0 auto;
     }
@@ -46,11 +54,11 @@ button.btn-chart-selection:nth-child(2){
 .disabled{
     font-size: 0.875em;
     background-color: $color-grey-900;
-    width: 8em;
-    height: 8em;
+    width: 6em;
+    height: 6em;
     img{
         width: auto;  
-        height: 6em;
+        height: 4.5em;
         object-fit: cover;
         margin: 0 auto;
     }

@@ -1,10 +1,9 @@
 .container-charts{
-
     display: flex;
     justify-content: center;
-    // background-image: url('C:\Users\fischiju\.DHBW\5. Semester\WD 3\Reuse-Secondhand\src\assets\charts\background-blue.svg');
     position: relative;
     z-index: 2;
+    margin-right: 3.5em;
 }
 
 .wrapper-bg-charts{
@@ -21,12 +20,3 @@
     }
 
 }
-
-/*
-background-image: url('src/assets/charts/background-blue.svg');
-  background-color: red;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;*/
