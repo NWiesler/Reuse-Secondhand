@@ -5,7 +5,6 @@
     border-radius: 5px 0px 0px 5px;
     border-left: 5px solid $color-green-500;
     transition: width 0.4s ease-in-out;         // damit die transition sich auf das einblenden UND das ausblenden auswirkt, muss die transition hier stehen und nicht im hover
-    
 }
 .navigation:hover{
     width: 16em;                                // width war vorher auf "auto", dann funktionieren die transitions nicht. width muss definiert sein damit transitions funktionieren
@@ -35,6 +34,11 @@ li[role=menuitem]{
         text-decoration: none;
     } 
 }
+li.bigger{
+    svg{
+        height: 1.2em;
+    }
+}
 li:hover{
     border-radius:12px;
     background-color: $color-green-200;
@@ -56,4 +60,10 @@ li:hover{
 hr{
     border: 1px solid $color-grey-200;
 }
+.arrow-nav {
+    position: absolute;
+    left: -0.8em;
+    margin-top: -1px;
+   }
+   
 

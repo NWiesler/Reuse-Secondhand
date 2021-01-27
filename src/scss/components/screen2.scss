@@ -16,12 +16,6 @@
     height: 17em;
     content: "";
     border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
-    background-image: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(236, 197, 167, 0.47) 0%,
-      rgba(236, 197, 167, 0.32) 70%,
-      #ecc5a7 100%
-    );
     animation: wave 5s linear infinite;
     margin: auto;
     transition: 0.3s;
@@ -50,7 +44,7 @@
 }
 
 .bubble-button{
-    background-image: $color-gradient-light-terracotta ;
+    background-image: $color-gradient-light-green ;
     border: none;
     padding: 0.5em;
     border-radius: 3px;
