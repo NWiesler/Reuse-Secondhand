@@ -22,10 +22,10 @@ function schlussfolgerungenEinblenden() {
 function schlussfolgerungenAusblenden() {
     document.getElementsByClassName('little-bubble-wrapper-schlussfolgerungen')[0].style.display = 'none'
 }
-function ButttonEinblenden() {
+function ButtonEinblenden() {
     document.getElementsByClassName('bubble-button')[0].style.display = 'inline'
 }
-function ButttonAusblenden() {
+function ButtonAusblenden() {
     document.getElementsByClassName('bubble-button')[0].style.display = 'none'
 }
 
@@ -33,22 +33,22 @@ function ButttonAusblenden() {
 document.getElementById("bubble1").addEventListener('click', function(){
     bubblesAusblenden();
     zusatzinfosEinblenden();
-    ButttonEinblenden();
+    ButtonEinblenden();
 });
 document.getElementById("bubble2").addEventListener('click', function(){
     bubblesAusblenden();
     gemeinsamkeitenEinblenden();
-    ButttonEinblenden();
+    ButtonEinblenden();
 });
 document.getElementById("bubble3").addEventListener('click', function(){
     bubblesAusblenden();
     schlussfolgerungenEinblenden();
-    ButttonEinblenden();
+    ButtonEinblenden();
 });
 document.getElementById("button-uebersicht").addEventListener('click', function(){
     bubblesEinblenden();
     zusatzinfosAusblenden();
     gemeinsamkeitenAusblenden();
     schlussfolgerungenAusblenden();
-    ButttonAusblenden();
+    ButtonAusblenden();
 });

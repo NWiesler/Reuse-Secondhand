@@ -1,10 +1,7 @@
-#nav_Bubbles{
-    margin: 2em 5em;
-}
 .bubble-intro{
     display: flex;
     justify-content: space-between;
-    margin: 6em 5em 0 5em;
+    padding: 3.5em 5em 0 5em;
 }
 .container-intro-text{
     max-width: 25em;
@@ -15,8 +12,8 @@
 }
 .bubble {
     position: relative;
-    width: 19em;
-    height: 19em;
+    width: 17em;
+    height: 17em;
     content: "";
     border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
     background-image: radial-gradient(
@@ -86,15 +83,15 @@
     flex-wrap: wrap;
     margin-top: 8em;
     max-width: 70em;
-    margin: 8em auto 0 auto; 
+    margin: 6em 3em 0 auto;
 }
 .little-bubble-wrapper-zusatzinfos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     position: relative;
-    margin: 6em auto 0 auto;
-    max-width: 76em;
+    margin: 6em 2em 0 auto;
+    max-width: 72em;
 }
 .little-bubble-wrapper-schlussfolgerungen {
     display: flex;
@@ -225,43 +222,41 @@
 //vs big overlap positionieren   
 div.wrapper-bubble-overlap:nth-child(3) > p:nth-child(2) {
     position: absolute;
-    top: 126px;
+    top: 3em;
     right: 426px;
 }
 // small overlap bubbles positionieren
 .small-overlap{
     position: relative;
 }
-/*
-div.wrapper-bubble-overlap:nth-child(4) {
-    margin: -4em 0 0 -2em;
+
+div.wrapper-bubble-overlap:nth-child(3) {
+    margin-top: -2em;
 }
-div.wrapper-bubble-overlap:nth-child(6) {
-    margin: 9em 0 0 -6em;
-}*/
-/*
-.small-overlap :nth-child(1) {
-    margin: -4em 0 0 -2em;
-}
-small-overlap :nth-child(3) {
-    margin: 9em 0 0 -6em;
-}*/
+div.color-z:nth-child(2) {
+    margin-top: -2.5em;
+    width: 22em;
+    height: 22em;
+}   
+   
 div.wrapper-bubble-overlap:nth-child(4) > div:nth-child(1) {
-    margin: -7.5em 0 0 -4em;
+    margin: -9.5em 0 0 -6em;
 }
 div.wrapper-bubble-overlap:nth-child(4) > div:nth-child(3) {
-    margin: 2.5em 0 0 -5.5em
+    margin: 1.5em 0 0 -5.5em;
 }
 div.color-z:nth-child(5) {
-    margin: 0 0 0 -3em;
+    margin: -2em 0 0 -5em;
+    width: 24em;
+    height: 24em;
 }
 
    
 //vs small overlap positionierne
 div.wrapper-bubble-overlap:nth-child(4) > p:nth-child(2) {
     position: absolute;
-    bottom: 263px;
-    right: 347px;
+    bottom: 9em;
+    right: 8.5em;
 }
    
 .bubbles-vs{
@@ -274,8 +269,8 @@ div.wrapper-bubble-overlap:nth-child(4) > p:nth-child(2) {
 /*HOVER*/
   
 .bubble:hover {
-    width: 20em;
-    height: 20em;
+    width: 18em;
+    height: 18em;
 }
   
 .bubble:hover .bubble-text {
@@ -331,22 +326,28 @@ div.color-s:nth-child(3) {
     bottom: 5.5em;
 }
 
-/*Positionierung Gemeinsamkeiten
 div.color-z:nth-child(2) {
-    bottom: -8px;
+    margin-top: -2.5em;
+    width: 22em;
+    height: 22em;
 }
-div.color-z:nth-child(4) {
-    bottom: -20px;
-    right: -25px;
+div.wrapper-bubble-overlap:nth-child(3) {
+    margin: -2em 1em 0 0;
 }
 div.color-z:nth-child(5) {
-    bottom: -73px;
-    right: 28px;
+    margin:-2em 0 0 -5em;
+    width: 24em;
+    height: 24em;
 }
-div.color-z:nth-child(6) {
-    right: 42px;
-    bottom: 81px;   
-}*/
-
-//Positionierung Zusatzinfos
-
+.big-overlap :nth-child(3) {
+    top:-5.125em;
+    margin:-2em 0 0 -6em;
+    width: 24em;
+    height: 24em;
+}
+div.wrapper-bubble-overlap:nth-child(3) > div:nth-child(1) {
+    width: 24em;
+    height: 24em;
+}
+   
+            

@@ -7,19 +7,9 @@
   <link rel="stylesheet" type="text/css" href="dist/main.css">
   <link rel="icon" type="image/png" href="/favicon.svg" sizes="32x32">
   <script src="https://code.highcharts.com/highcharts.js"></script>
-
-  <style>
-    /*
-    .background-red{
-    width: 100%;
-    height: 2000px;
-    margin-top: 100px;
-    background-image: url('src/assets/background-red.png');
-    background-repeat: no-repeat;
-    }*/
-    </style>
 </head>
-<body id="nav_Anfang">
+<body>
+  <span style="display: none;" id="nav_Anfang"> zum Anfang </span>
   <div>
     <nav class="navigation sticky" role="navigation">
       <ul class="container-nav-links" role="menubar">
@@ -93,7 +83,7 @@
   </div>
 <!--Content-->
   <main>
-    <section id="nav_Anfang">
+    <section>
           <h1>ReUse und Secondhand</h1>
           <div class="container-herotext">
             <p class="hero-subline">in Deutschland</p>
@@ -173,7 +163,7 @@
           <p>Die Personen werden aufgrund ihres Wohnorts zusammengefasst, indem Personen aus dem Westen und Osten
             Deutschlands
             jeweils eine Gruppe bilden.</p>
-          <p class="link">mehr erfahren</p>
+          <a href="#nav_Daten" onclick="showLokalisation()" class="link" >mehr erfahren</a>
         </div>
       </div>
       <div class="card">
@@ -181,7 +171,7 @@
         <div class="cardtext">
           <h3>Alter</h3>
           <p>In einem Vergleich werden die unter 30 und über 30-jährigen Teilnehmer der Studie unterschieden.</p>
-          <p class="link">mehr erfahren</p>
+          <a href="#nav_Daten" onclick="showAlter()()" class="link">mehr erfahren</a>
         </div>
       </div>
       <div class="card">
@@ -191,7 +181,7 @@
           <p>Die Teilnehmer der Studie sind gruppiert, je nachdem, ob sie Käufer:innen von gebrauchten Waren sind oder
             nicht.
             Hier wird also hinsichtlich ihres Konsumverhaltens unterscheiden. </p>
-          <p class="link">mehr erfahren</p>
+          <a href="#nav_Daten" onclick="showKonsumart()" class="link">mehr erfahren</a>
         </div>
       </div>
     </div>
@@ -234,11 +224,7 @@
     <div class="container-background">
       <img id="chart-bg" src="src/assets/charts/background-charts-blue.svg" alt="Hintergrundfläche blau">
     </div>
-
-
   </div>
-
-
   </section>
 
   <div class="container-section-divider">
@@ -345,7 +331,7 @@
             <p>Vorstädter lassen sich stärker durch ihr Umfeld motivieren, als Städter</p>
           </div>
         </div>
-        <div class="little-bubble color-z size-xl">
+        <div class="little-bubble color-z size-l">
           <div class="little-bubble-wrapper-text">
             <p class="percent">57%</p>
             <p>der Befragten, die gebrauchte Produkte verkauft haben, können sich in Zukunft den Kauf gebrauchter Produkte vorstellen, um die Umwelt zu schonen </p>
@@ -368,17 +354,17 @@
           </div>
         </div>
         <div class="wrapper-bubble-overlap small-overlap">
-          <div class="little-bubble color-z size-l bubble-overlap">
+          <div class="little-bubble color-z size-m bubble-overlap">
             <div class="little-bubble-wrapper-text">
-              <p class="percent">53%</p>
-              <p>der Personen aus ländlichen Gegenden sehen gebrauchte Gegenstände als attraktive Alternative an</p>
+              <p class="percent">46%</p>
+              <p> der Personen aus der Stadt sehen gebrauchte Gegenstände als attraktive Alternative an</p>
             </div>
           </div>
           <p class="bubbles-vs">vs</p>
-          <div class="little-bubble color-z size-l bubble-overlap">
+          <div class="little-bubble color-z size-m bubble-overlap">
             <div class="little-bubble-wrapper-text">
-              <p class="percent">46%</p>
-              <p>der Personen aus der Stadt sehen gebrauchte Gegenstände als attraktive Alternative an</p>
+              <p class="percent">53%</p>
+              <p>der Personen aus ländlichen Gegenden sehen gebrauchte Gegenstände als attraktive Alternative an</p>
             </div>
           </div>
         </div>
@@ -393,12 +379,8 @@
               <p>Städter finden “Fridays for Future” unterstützenswerter als Befragte aus ländlichen Gebieten. </p>
             </div>
           </div>
-        </div>
-
-
-
-
-        <div class="little-bubble-wrapper-schlussfolgerungen" id="schlussfolgerungen">
+      </div>
+      <div class="little-bubble-wrapper-schlussfolgerungen" id="schlussfolgerungen">
           <div class="little-bubble color-s size-l">
             <div class="little-bubble-wrapper-text">
             <p>Obwohl Neu-Käufer in letzter Zeit nicht gebraucht gekauft haben, finden fast ein Drittel, dass gebrauchte Waren eine attraktive Alternative zu neuen Produkten sind. </p>
