@@ -9,8 +9,8 @@ function setLokalisationActive(){
     document.getElementById("btn-alter").className = "btn-chart-selection disabled";
     document.getElementById("btn-konsumart").className = "btn-chart-selection disabled";
 
-    document.getElementById('btn-lokalisation').addEventListener('click', () => {
-        chart1 = Highcharts.chart('container', {
+
+    const chart1 = Highcharts.chart('container', {
             chart: {           
                 inverted: true,
                 plotBackgroundColor: {
@@ -111,9 +111,8 @@ function setLokalisationActive(){
                 },
             }],
         });
-    });
-    document.getElementById('btn-lokalisation').addEventListener('click', () => {
-        chart2 = Highcharts.chart('container2', {
+    
+    const chart2 = Highcharts.chart('container2', {
             chart: {           
                 inverted: true,
                 plotBackgroundColor: {
@@ -213,7 +212,6 @@ function setLokalisationActive(){
                 },
             }],
         });
-    });
 }
 
 function setAlterActive(){
@@ -227,8 +225,7 @@ function setAlterActive(){
     document.getElementById("btn-alter").className = "btn-chart-selection active active-alter";
     document.getElementById("btn-konsumart").className = "btn-chart-selection disabled";
 
-    document.getElementById('btn-alter').addEventListener('click', () => {
-        chart1 = Highcharts.chart('container', {
+    const chart1 = Highcharts.chart('container', {
             chart: {           
                 inverted: true,
                 plotBackgroundColor: {
@@ -329,9 +326,8 @@ function setAlterActive(){
                 },
             }],
         });
-    });
-    document.getElementById('btn-alter').addEventListener('click', () => {
-        chart2 = Highcharts.chart('container2', {
+
+    const chart2 = Highcharts.chart('container2', {
             chart: {           
                 inverted: true,
                 plotBackgroundColor: {
@@ -431,7 +427,7 @@ function setAlterActive(){
                 },
             }],
         });
-    });
+
 }
 
 function setKonsumartActive(){
@@ -445,8 +441,7 @@ function setKonsumartActive(){
     document.getElementById("btn-alter").className = "btn-chart-selection disabled";
     document.getElementById("btn-konsumart").className = "btn-chart-selection active active-konsumart";
 
-    document.getElementById('btn-konsumart').addEventListener('click', () => {
-        chart1 = Highcharts.chart('container', {
+    const chart1 = Highcharts.chart('container', {
             chart: {           
                 inverted: true,
                 plotBackgroundColor: {
@@ -547,9 +542,9 @@ function setKonsumartActive(){
                 },
             }],
         });
-    });
-    document.getElementById('btn-konsumart').addEventListener('click', () => {
-        chart2 = Highcharts.chart('container2', {
+
+
+    const chart2 = Highcharts.chart('container2', {
             chart: {           
                 inverted: true,
                 plotBackgroundColor: {
@@ -648,5 +643,5 @@ function setKonsumartActive(){
                 },
             }],
         });
-    });
+
 }
