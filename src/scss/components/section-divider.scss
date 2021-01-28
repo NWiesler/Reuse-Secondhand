@@ -1,0 +1,15 @@
+.container-section-divider{
+    margin: -6em auto 6em;
+    hr{
+        border: 1px solid $color-grey-400;
+    }
+}
+.container-section-text {
+    display: flex;
+    justify-content: center;
+    margin-top: -34px;
+    height: 48px;
+    p{
+        margin-left: 1em;
+    }
+}

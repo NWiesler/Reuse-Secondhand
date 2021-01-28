@@ -1,0 +1,344 @@
+.bubble-intro{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5em 5em 0 5em;
+}
+.container-intro-text{
+    max-width: 25em;
+    #bubble-intro-headline{
+        margin: 0.25em 0 0.5em 0;
+    }
+
+}
+.bubble {
+    position: relative;
+    width: 17em;
+    height: 17em;
+    content: "";
+    border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+    animation: wave 5s linear infinite;
+    margin: auto;
+    transition: 0.3s;
+}
+  
+.bubble-text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+  
+.bubble-text {
+    text-decoration: none;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+  
+    color: #000000;
+}
+
+.bubble-button{
+    background-image: $color-gradient-light-green ;
+    border: none;
+    padding: 0.5em;
+    border-radius: 3px;
+    font-family: Jost, sans-serif;
+    font-size: 1em;
+    font-weight: 800; 
+    color: white;
+    height: 2.5em;
+    display: none;
+    svg{
+        height: 0.75em;
+        width: auto;
+        margin-right: 0.25em;
+    }
+}
+  
+#bubble-text-lowercase {
+    text-transform: lowercase !important;
+}
+.bubble-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -2em;
+}
+  
+/* LITTLE BUBBLE */
+.little-bubble-wrapper-gemeinsamkeiten {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 8em;
+    max-width: 70em;
+    margin: 5em 3em 0 auto;
+}
+.little-bubble-wrapper-zusatzinfos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 6em 2em 0 auto;
+    max-width: 72em;
+}
+.little-bubble-wrapper-schlussfolgerungen {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 12em;
+}
+
+#gemeinsamkeiten {
+    display: none;
+}
+  
+#zusatzinfos {
+    display: none;
+}
+  
+#schlussfolgerungen {
+    display: none;
+}
+  
+.little-bubble {
+    position: relative;
+    border-radius: 50%;
+    font-size: 14px;
+    animation: wave 5s linear infinite;
+}
+  
+.color-g {
+    background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(133.76deg, #5f8b96 15.01%, #265870 87.42%);
+}
+  
+.color-z {
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(133.76deg, #c99a8d 15%, #cca094 15.01%, #a3604d 87.42%);
+}
+  
+.color-s {
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(133.76deg, #a4b690 15%, #588074 87.42%);
+}
+  
+.size-s {
+    width: 16em;
+    height: 16em;
+    bottom: 6em;
+}
+.size-m {
+    width: 18.75em;
+    height: 18.75em;
+}
+.size-l {
+    width: 25em;
+    height: 25em;
+    font-size: 16px;
+}
+.size-xl {
+    width: 27em;
+    height: 27em;
+    font-size: 16px;
+}
+.little-bubble-wrapper-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 11.5em;
+}
+  
+.little-bubble p {
+    text-align: center;
+    font-family: jost;
+    margin: 0 0 -0.2em 0;
+}
+.percent {
+    font-weight: bold;
+    font-size: 60px;
+    color: #ffffff;
+}
+  
+.tag {
+    font-weight: bold;
+    font-size: small;
+    border: 1px solid #ecc5a7;
+    border-radius: 3px;
+    background-color: cornsilk;
+    width: fit-content;
+    align-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+//Overlapped bubbles
+.bubble-overlap{
+    background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(133.76deg, #c99a8d 15%, #cca094 15.01%, #a3604d 87.42%);
+    opacity: 90% ;
+    z-index: 1;
+}
+.wrapper-bubble-overlap{
+    display: flex; 
+}
+.big-overlap{
+    :nth-child(3){
+        top: -5.125em;
+        margin: -2em 0 0 -6em;
+    } 
+}
+
+//vs big overlap positionieren   
+div.wrapper-bubble-overlap:nth-child(3) > p:nth-child(2) {
+    position: absolute;
+    top: 3em;
+    right: 426px;
+}
+// small overlap bubbles positionieren
+.small-overlap{
+    position: relative;
+}
+
+div.wrapper-bubble-overlap:nth-child(3) {
+    margin-top: -2em;
+}
+div.color-z:nth-child(2) {
+    margin-top: -2.5em;
+    width: 22em;
+    height: 22em;
+}   
+   
+div.wrapper-bubble-overlap:nth-child(4) > div:nth-child(1) {
+    margin: -9.5em 0 0 -6em;
+}
+div.wrapper-bubble-overlap:nth-child(4) > div:nth-child(3) {
+    margin: 1.5em 0 0 -5.5em;
+}
+
+
+   
+//vs small overlap positionierne
+div.wrapper-bubble-overlap:nth-child(4) > p:nth-child(2) {
+    position: absolute;
+    bottom: 8em;
+    right: 8em;
+}
+   
+.bubbles-vs{
+    z-index: 2;
+}
+/* Funktionen */
+.bubble-row-2 .disabled {
+    display: none;
+}
+/*HOVER*/
+  
+.bubble:hover {
+    width: 18em;
+    height: 18em;
+}
+  
+.bubble:hover .bubble-text {
+    font-size: 26px;
+}
+  
+.bubble:onclick .bubble-text {
+    animation: klick 5s linear infinite;
+}
+  
+/*ANIMATIONEN*/
+@keyframes wave {
+    20% {
+      border-radius: 45% 55% 62% 38% / 53% 41% 49% 47%;
+    }
+  
+    60% {
+      border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
+    }
+}
+  
+  /* @keyframes klick {
+    0% {
+    color: #333;
+    font-size: 26px;
+    }
+    100% {
+      color: rgb(203, 20, 188);
+      font-size: 30px;
+    }
+  } */
+//Positionierung
+div.color-g:nth-child(6) {
+    bottom: 195px;
+    left: -25px;
+}
+div.little-bubble:nth-child(7) {
+    bottom: 38px;
+    left: -66px;;
+}
+div.little-bubble:nth-child(8) {
+    bottom: 27px;
+    right: -36px;
+}
+div.little-bubble:nth-child(9) {
+    bottom: 160px;
+}
+
+div.color-s:nth-child(1) {
+    bottom: 5.5em;
+}
+div.color-s:nth-child(3) {
+    bottom: 5.5em;
+}
+
+div.color-z:nth-child(2) {
+    margin-top: -2.5em;
+    width: 22em;
+    height: 22em;
+}
+div.wrapper-bubble-overlap:nth-child(3) {
+    margin: -2em 1em 0 0;
+}
+div.color-z:nth-child(5) {
+    margin:-2em 0 0 -5em;
+    width: 20em;
+    height: 20em;
+}
+.big-overlap :nth-child(3) {
+    top:-5.125em;
+    margin:-2em 0 0 -6em;
+    width: 24em;
+    height: 24em;
+}
+div.wrapper-bubble-overlap:nth-child(3) > div:nth-child(1) {
+    width: 24em;
+    height: 24em;
+}
+   
+            

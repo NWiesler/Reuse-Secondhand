@@ -2,13 +2,18 @@ html,
 body,
 header {
    margin: 0 auto;
+   height: 100vh;
    max-width: 100%;
    overflow-x: hidden;
-   -ms-overflow-style: none; /* IE and Edge */
-   scrollbar-width: none;  /* Firefox */
+   -ms-overflow-style: none;
+   scrollbar-width: none;
 }
 body{
    margin: -32px 0 0 0;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 ::-webkit-scrollbar {
    display: none;
@@ -16,4 +21,24 @@ body{
 .row-full{
    width: 100%;
    height: auto;
+}
+main {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  //padding: 2rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  scroll-snap-stop: always;
+  scroll-snap-align: center;
+}
+#nav_Anfang{
+   padding-top: 1em;
 }

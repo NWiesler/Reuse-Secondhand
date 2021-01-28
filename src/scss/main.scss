@@ -1,6 +1,6 @@
 //Hier jede neue Datei ergänzen, damit sie kompiliert wird
 
-@import 'style/_spacing.scss'; 
+@import 'style/_spacing.scss';
 @import 'style/_colors.scss';
 @import 'style/_fonts.scss';
 @import 'style/base-style.scss';
@@ -9,4 +9,8 @@
 @import 'components/ziel-studie.scss';
 @import 'components/die-studie.scss';
 @import 'components/navigation.scss';
-@import 'components/bubbles.scss';
+@import 'components/chart.scss';
+@import 'components/chart-header.scss';
+@import 'components/section-divider.scss';
+@import 'components/impressum.scss';
+@import 'components/screen2.scss'; 

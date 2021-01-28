@@ -4,10 +4,10 @@
     background-color: $color-green-100;
     border-radius: 5px 0px 0px 5px;
     border-left: 5px solid $color-green-500;
+    transition: width 0.4s ease-in-out;         // damit die transition sich auf das einblenden UND das ausblenden auswirkt, muss die transition hier stehen und nicht im hover
 }
 .navigation:hover{
-    width: auto;
-    transition: width 2s ease-in;
+    width: 16em;                                // width war vorher auf "auto", dann funktionieren die transitions nicht. width muss definiert sein damit transitions funktionieren
     a {
         display: inline;
     }
@@ -23,8 +23,10 @@ li[role=menuitem]{
     padding: 0.75em;
     border-radius: 0.75em;
     height: auto;
-    img{
+    svg {
         margin-right: 1em;
+        height: 1em;
+        width: auto;
     }
     a {
         display: none;
@@ -32,14 +34,21 @@ li[role=menuitem]{
         text-decoration: none;
     } 
 }
+li.bigger{
+    svg{
+        height: 1.2em;
+    }
+}
 li:hover{
     border-radius:12px;
     background-color: $color-green-200;
     a {
-        color: $color-green-600; 
-        img{
-            fill: rebeccapurple;
-        }
+        color: $color-green-600;
+    }
+    // Icons bei hover grün einfärben
+    svg {
+        .st0 { stroke: $color-green-600; }
+        .st1,.st3 { fill: $color-green-600;}
     }
 }
 .sticky {
@@ -51,5 +60,10 @@ li:hover{
 hr{
     border: 1px solid $color-grey-200;
 }
-
+.arrow-nav {
+    position: absolute;
+    left: -0.8em;
+    margin-top: -1px;
+   }
+   
 

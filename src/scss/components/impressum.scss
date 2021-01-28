@@ -1,0 +1,77 @@
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 999999999999999;
+	top: 0;
+	right: 0;
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255,1);
+	overflow-x: hidden;
+	transition: 0.5s;
+	a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 36px;
+		color: #ffffff;
+		display: block;
+		transition: 0.3s;
+		&:hover {
+			color: #f1f1f1;
+		}
+		&:focus {
+			color: #f1f1f1;
+		}
+	}
+	.closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+		color:#333;
+	}
+}
+.overlay-content {
+	position: relative;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+@media screen and (max-height: 450px) {
+	.overlay {
+		a {
+			font-size: 20px;
+		}
+		.closebtn {
+			font-size: 40px;
+			top: 15px;
+			right: 35px;
+		}
+	}
+}
+
+.container-people {
+	position: absolute;
+	top: 650px;
+	left: 0;
+
+}
+
+#speechbubble1 {
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+
+#speechbubble2 {
+	position: absolute;
+	top: 400px;
+	left:555px;
+}
+
+#speechbubble3 {
+	position: absolute;
+	top: 200px;
+	right: 100px;
+}

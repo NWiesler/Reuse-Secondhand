@@ -1,0 +1,23 @@
+.container-charts{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    margin-right: 3.5em;
+}
+
+.wrapper-bg-charts{
+    position: relative;
+    margin: 1em 0 0 0;
+}
+.container-background{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: -1em;
+    img{
+        height: auto;
+        width: 100%;
+    }
+
+}
