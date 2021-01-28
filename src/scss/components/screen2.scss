@@ -68,6 +68,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: -2em;
 }
   
 /* LITTLE BUBBLE */
@@ -77,7 +78,7 @@
     flex-wrap: wrap;
     margin-top: 8em;
     max-width: 70em;
-    margin: 6em 3em 0 auto;
+    margin: 5em 3em 0 auto;
 }
 .little-bubble-wrapper-zusatzinfos {
     display: flex;
@@ -239,18 +240,14 @@ div.wrapper-bubble-overlap:nth-child(4) > div:nth-child(1) {
 div.wrapper-bubble-overlap:nth-child(4) > div:nth-child(3) {
     margin: 1.5em 0 0 -5.5em;
 }
-div.color-z:nth-child(5) {
-    margin: -2em 0 0 -5em;
-    width: 24em;
-    height: 24em;
-}
+
 
    
 //vs small overlap positionierne
 div.wrapper-bubble-overlap:nth-child(4) > p:nth-child(2) {
     position: absolute;
-    bottom: 9em;
-    right: 8.5em;
+    bottom: 8em;
+    right: 8em;
 }
    
 .bubbles-vs{
@@ -330,8 +327,8 @@ div.wrapper-bubble-overlap:nth-child(3) {
 }
 div.color-z:nth-child(5) {
     margin:-2em 0 0 -5em;
-    width: 24em;
-    height: 24em;
+    width: 20em;
+    height: 20em;
 }
 .big-overlap :nth-child(3) {
     top:-5.125em;

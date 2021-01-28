@@ -11,7 +11,7 @@
 .container-studie{
     position: relative;
     z-index: 2;
-    margin-top: 8.5em;
+    margin-top: 6.5em;
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
@@ -19,13 +19,13 @@
 .background-red{
     width: 100%;
     position: absolute;
-    top:-23.5em;
+    top:-25.5em;
     left: -0.5em;
     z-index: 1;
 }
 .container-studie > img:nth-child(2) {
     position: absolute;
-    top: -9.5em;
+    top: -7.5em;
     left: -5em;
 }
    
